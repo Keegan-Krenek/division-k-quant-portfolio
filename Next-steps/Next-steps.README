@@ -19,3 +19,12 @@ Engine instability detection
 
 Actor interference modeling
 
+README.md for the Proto-database folder
+
+build.sh (bash script to auto-create DB + run schema)
+
+drop_all.sql (clean wipe + rebuild)
+
+insert_templates.sql for each table
+
+example_queries.sql (joins, structural queries, etc.)
