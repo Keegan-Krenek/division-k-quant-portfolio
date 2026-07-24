@@ -1,0 +1,191 @@
+Relational Model
+The Division‑K Proto‑Database uses a structured relational model to connect markets, trades, spikes, actors, timing layers, candle behavior, liquidation events, and pattern ontology. This document explains how the tables relate, how the ERD is organized, and how the relational architecture supports structural trading research.
+
+Entity‑Relationship Diagram (ERD) Overview
+The ERD visualizes the core relationships between:
+
+Markets
+
+Daily Logs
+
+Trades
+
+Spikes
+
+Actors
+
+Movement Families
+
+Memory Taps
+
+Candle Trackers
+
+Liquidation Events
+
+Synthetic Timing Layers
+
+Patterns
+
+Each table represents a structural concept, and the ERD shows how these concepts interact across timeframes and markets.
+
+The ERD file is located in:
+Proto-database/ERD Folder/proto-database-erd.png
+
+Core Relationships
+1. Markets → Daily Logs (1-to-Many)
+Each market has many daily logs.
+
+markets.market_id → daily_logs.market_id
+
+Daily logs store daily structural snapshots, spike counts, actor pressure, and engine stability.
+
+2. Markets → Trades (1-to-Many)
+Each market has many trades.
+
+markets.market_id → trades.market_id
+
+Trades represent high‑frequency structural entries/exits, actor interactions, and spike reactions.
+
+3. Daily Logs → Trades (1-to-Many)
+Each daily log contains many trades.
+
+daily_logs.log_id → trades.log_id
+
+This links trades to the structural context of the day.
+
+4. Trades → Price Spikes (Many-to-One)
+Many trades may reference the same spike event.
+
+trades.spike_id → price_spikes.spike_id
+
+This allows analysis of trade behavior around spike ignition.
+
+5. Price Spikes → Actors (Many-to-One)
+Each spike is associated with a primary actor fingerprint.
+
+price_spikes.actor_id → actor_registry.actor_id
+
+This links spike behavior to actor classification.
+
+6. Engine Map → Movement Families (1-to-Many)
+Each engine map entry may reference multiple movement‑family rules.
+
+engine_map.engine_id → movement_family.engine_id
+
+Movement families describe structural sequences, geometry breaks, and inversion markers.
+
+7. Engine Map → Memory Taps (1-to-Many)
+Each engine map may contain multiple memory‑tap interactions.
+
+engine_map.engine_id → memory_taps.engine_id
+
+Memory taps represent depth interactions and structural outcomes.
+
+8. Markets → Candle Trackers (1-to-Many per timeframe)
+Each market has multiple candle entries per timeframe.
+
+markets.market_id → candle_1m.market_id
+
+markets.market_id → candle_15m.market_id
+
+markets.market_id → candle_1h.market_id
+
+This supports multi‑timeframe structural candle analysis.
+
+9. Markets → Liquidation Events (1-to-Many)
+Each market may have many liquidation clusters.
+
+markets.market_id → liquidation_events.market_id
+
+Liquidation events track cascades, actor reactions, and recovery strength.
+
+10. Markets → Synthetic Spikes (1-to-Many)
+Synthetic spikes are stored separately from natural spikes.
+
+markets.market_id → synthetic_spikes.market_id
+
+This supports synthetic engine behavior analysis.
+
+11. Synthetic Spikes → Shared Timing (1-to-Many)
+Synthetic spikes may be part of multi‑market timing sync.
+
+synthetic_spikes.synthetic_id → synthetic_shared_timing.synthetic_id
+
+This links synthetic ignition across markets.
+
+12. Markets → Flat Spike Markets (1-to-Many)
+Flat‑spike markets have unique structural behavior.
+
+markets.market_id → flat_spike_markets.market_id
+
+This supports analysis of flat‑spike engine patterns.
+
+13. Patterns → Everything (Many-to-Many via references)
+Patterns may reference:
+
+spikes
+
+actors
+
+trades
+
+candle sequences
+
+liquidation events
+
+timing sync
+
+movement families
+
+Patterns form the ontology layer of the structural system.
+
+| Table | Connected To | Relationship Type | Purpose |
+| --- | --- | --- | --- |
+| markets | daily_logs, trades, candles, spikes, synthetic layers, liquidation | 1-to-many | Market identity + structural anchor |
+| daily_logs | trades | 1-to-many | Daily structural context |
+| trades | spikes | many-to-one | Trade behavior around spikes |
+| price_spikes | actors | many-to-one | Actor fingerprint linkage |
+| engine_map | movement_family, memory_taps | 1-to-many | Engine mechanics |
+| synthetic_spikes | synthetic_shared_timing | 1-to-many | Synthetic timing sync |
+| patterns | all major tables | many-to-many | Structural ontology |
+
+Join Examples
+
+Trades with Spike + Actor Info
+
+SELECT t.*, s.*, a.*
+FROM trades t
+JOIN price_spikes s ON t.spike_id = s.spike_id
+JOIN actor_registry a ON s.actor_id = a.actor_id;
+
+Daily Logs with Market Info
+
+SELECT d.*, m.*
+FROM daily_logs d
+JOIN markets m ON d.market_id = m.market_id;
+
+Synthetic Timing Sync Across Markets
+
+SELECT st.*, ss.*, m.*
+FROM synthetic_shared_timing st
+JOIN synthetic_spikes ss ON st.synthetic_id = ss.synthetic_id
+JOIN markets m ON ss.market_id = m.market_id;
+
+Schema Integration Notes
+The relational model is designed to:
+
+mirror the 20‑Layer Master Schema
+
+support multi‑market structural analysis
+
+allow cross‑layer queries
+
+maintain clean foreign‑key relationships
+
+support future dashboards and automation
+
+integrate with the image library
+
+integrate with structural tools
+
+The database acts as the data backbone for all Division‑K research.
