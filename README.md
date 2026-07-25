@@ -12,6 +12,23 @@ A fully structured, multi‑layer quantitative research portfolio built to rever
 - Case studies with annotated engine cycles and structural outcomes  
 - Production‑ready research architecture designed for scalability and repeatability
 
+## Repository Structure
+
+### Master Schema Multi Layer Market Research
+The full 20-layer structural engine model. Each layer maps a different part of synthetic market behavior, engine motion, or actor influence.
+
+### Proto-database
+SQL schema, ERD, and engine-level tables used to store structural research data and support automation.
+
+### Docs
+All written theory, structural explanations, engine behavior notes, and research documentation.
+
+### Next-steps
+Roadmap and future development modules for the structural trading system.
+
+### Image-Library
+Visual assets, diagrams, banners, and reference images used throughout the project.
+
 
 
 <p align="center">
