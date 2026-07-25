@@ -11,3 +11,9 @@ A fully structured, multi‑layer quantitative research portfolio built to rever
 - High‑frequency microstructure execution (250 APM)  
 - Case studies with annotated engine cycles and structural outcomes  
 - Production‑ready research architecture designed for scalability and repeatability
+
+
+
+<p align="center">
+  <img src="https://github.com/kedgann/division-k-quant-portfolio/blob/b56727bef7adad8ea9b17c1938f1098aab779797/Image-Library/Profile/Division%20K%20Quant%20porfolio.PNG?raw=true" width="100%" />
+</p>
