@@ -1,3 +1,32 @@
+# Master Schema Overview
+
+The Division‑K Master Schema is a 20‑layer structural framework designed to map, classify, and analyze synthetic and natural market‑engine behavior. Each layer represents a distinct structural concept, forming a complete system for understanding engine mechanics, actor behavior, spike ignition, timing synchronization, candle structure, liquidation cascades, and pattern ontology.
+
+The Master Schema is the core architecture of Division‑K research.
+It connects directly to the Proto‑Database, Image Library, and all future tools and dashboards.
+
+## Purpose of the Master Schema
+
+The schema exists to:
+
+- Provide a unified structural model for all markets
+
+- Break down engine behavior into modular layers
+
+- Support SQL‑based research and automation
+
+- Enable multi‑market comparison and timing sync
+
+- Create a foundation for pattern ontology
+
+- Support future dashboards and machine‑assisted tools
+
+- Maintain consistency across markets and timeframes
+
+It is the backbone of Division‑K structural trading.
+
+---
+
 ## High‑Level Summary of All 20 Layers
 
 - **Layer 1 — Market Identity**  
@@ -79,3 +108,134 @@ SQL: derived from all layers
 - **Layers 10–20 — Meta Layers**  
 Future expansion layers for:  
 multi‑market comparison, actor evolution, timing‑sync forecasting, structural clustering, ontology expansion, dashboard integration, machine‑assisted research.
+
+Future expansion layers for:
+
+- multi‑market comparison
+
+- actor evolution
+
+- timing‑sync forecasting
+
+- structural clustering
+
+- ontology expansion
+
+- dashboard integration
+
+- machine‑assisted research
+
+These layers will be added as Division‑K research evolves.
+
+---
+
+## How Layers Interact
+
+Layers 1–3  
+Market identity → daily logs → trades
+
+Layers 4–5  
+Engine mechanics → movement families → actors → memory taps
+
+Layers 6–6.x  
+Spikes → candles → liquidation → synthetic behavior
+
+Layers 7–9  
+Patterns → synthetic tracking → forecasting
+
+Layers 10–20  
+Meta‑layer expansion
+
+This creates a vertical stack of structural concepts.
+
+---
+
+## Connection to the Proto‑Database
+
+Each schema layer maps directly to a SQL table.
+
+Examples:
+
+Layer 1 → markets  
+Layer 2 → daily_logs  
+Layer 3 → trades  
+Layer 4 → engine_map  
+Layer 4.2 → movement_family  
+Layer 4.3 → actor_registry  
+Layer 5 → memory_taps  
+Layer 6 → price_spikes  
+Layer 6.x → candle tables  
+Layer 6.5 → liquidation_events  
+Layer 6.6 → synthetic_spikes  
+Layer 6.7 → synthetic_shared_timing  
+Layer 6.8 → flat_spike_markets  
+Layer 7.2 → patterns
+
+This creates a direct bridge between:
+
+schema → SQL → research → tools → dashboards
+
+---
+
+## Connection to the Image Library
+
+Each schema layer has visual references stored in:
+
+Image-Library/
+
+Examples:
+
+Layer 4 → engine maps  
+Layer 4.3 → actor fingerprints  
+Layer 6 → spike clusters  
+Layer 6.x → candle sequences  
+Layer 6.5 → liquidation cascades  
+Layer 7.2 → pattern screenshots
+
+Images support:
+
+- structural classification
+
+- actor identification
+
+- spike behavior analysis
+
+- pattern ontology development
+
+---
+
+## Connection to Tools
+
+The schema supports future tools such as:
+
+- spike analyzers
+
+- actor classifiers
+
+- timing sync detectors
+
+- candle parsers
+
+- market dashboards
+
+Each tool references specific schema layers and SQL tables.
+
+---
+
+## Future Schema Expansion
+
+Planned additions include:
+
+- multi‑market synthetic clustering
+
+- actor evolution modeling
+
+- timing‑sync forecasting
+
+- ontology expansion
+
+- dashboard integration
+
+- machine‑assisted structural research
+
+The Master Schema is designed to grow as Division‑K research evolves.
