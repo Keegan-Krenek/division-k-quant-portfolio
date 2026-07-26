@@ -156,20 +156,20 @@ Each schema layer maps directly to a SQL table.
 
 Examples:
 
-Layer 1 → markets  
-Layer 2 → daily_logs  
-Layer 3 → trades  
-Layer 4 → engine_map  
-Layer 4.2 → movement_family  
-Layer 4.3 → actor_registry  
-Layer 5 → memory_taps  
-Layer 6 → price_spikes  
-Layer 6.x → candle tables  
-Layer 6.5 → liquidation_events  
-Layer 6.6 → synthetic_spikes  
-Layer 6.7 → synthetic_shared_timing  
-Layer 6.8 → flat_spike_markets  
-Layer 7.2 → patterns
+- Layer 1 → markets  
+- Layer 2 → daily_logs  
+- Layer 3 → trades  
+- Layer 4 → engine_map  
+- Layer 4.2 → movement_family  
+- Layer 4.3 → actor_registry  
+- Layer 5 → memory_taps  
+- Layer 6 → price_spikes  
+- Layer 6.x → candle tables  
+- Layer 6.5 → liquidation_events  
+- Layer 6.6 → synthetic_spikes  
+- Layer 6.7 → synthetic_shared_timing  
+- Layer 6.8 → flat_spike_markets  
+- Layer 7.2 → patterns
 
 This creates a direct bridge between:
 
@@ -185,12 +185,12 @@ Image-Library/
 
 Examples:
 
-Layer 4 → engine maps  
-Layer 4.3 → actor fingerprints  
-Layer 6 → spike clusters  
-Layer 6.x → candle sequences  
-Layer 6.5 → liquidation cascades  
-Layer 7.2 → pattern screenshots
+- Layer 4 → engine maps  
+- Layer 4.3 → actor fingerprints  
+- Layer 6 → spike clusters  
+- Layer 6.x → candle sequences  
+- Layer 6.5 → liquidation cascades  
+- Layer 7.2 → pattern screenshots
 
 Images support:
 
