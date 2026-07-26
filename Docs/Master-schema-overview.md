@@ -132,19 +132,19 @@ These layers will be added as Division‑K research evolves.
 ## How Layers Interact
 
 Layers 1–3  
-Market identity → daily logs → trades
+- Market identity → daily logs → trades
 
 Layers 4–5  
-Engine mechanics → movement families → actors → memory taps
+- Engine mechanics → movement families → actors → memory taps
 
 Layers 6–6.x  
-Spikes → candles → liquidation → synthetic behavior
+- Spikes → candles → liquidation → synthetic behavior
 
 Layers 7–9  
-Patterns → synthetic tracking → forecasting
+- Patterns → synthetic tracking → forecasting
 
 Layers 10–20  
-Meta‑layer expansion
+- Meta‑layer expansion
 
 This creates a vertical stack of structural concepts.
 
