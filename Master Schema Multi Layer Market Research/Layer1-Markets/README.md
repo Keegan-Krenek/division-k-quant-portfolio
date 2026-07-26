@@ -1,25 +1,19 @@
-Layer 1 — Markets
+# Layer 1 — Markets
 Market List, Engine Identity, Structural Classification & Tracking Scope
 
 
-Usage
+## Usage
 Use Layer 1 to:
 
-define the markets included in your system
+- define the markets included in your system
+- classify each market’s engine type
+- establish structural expectations (synthetic rhythm, natural volatility, hybrid behavior)
+- map which markets feed into which downstream layers
+- track engine evolution over time
+- maintain a clean, centralized list of all engines you analyze
+- support daily logs (Layer 2), trades (Layer 3), engine mapping (Layer 4), and spike systems (Layer 6)
 
-classify each market’s engine type
-
-establish structural expectations (synthetic rhythm, natural volatility, hybrid behavior)
-
-map which markets feed into which downstream layers
-
-track engine evolution over time
-
-maintain a clean, centralized list of all engines you analyze
-
-support daily logs (Layer 2), trades (Layer 3), engine mapping (Layer 4), and spike systems (Layer 6)
-
-Layer 1 is the foundation layer — the structural index that anchors your entire engine‑modeling framework.
+# Layer 1 is the foundation layer — the structural index that anchors your entire engine‑modeling framework.
 
 | **Market** | **Status** | **Tags** | **Notes** |
 | --- | --- | --- | --- |
