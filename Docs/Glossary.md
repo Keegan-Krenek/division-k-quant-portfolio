@@ -1,160 +1,123 @@
-Glossary
+# Glossary
+
 This glossary defines all core structural trading terms used throughout the Division‑K Master Schema, Proto‑Database, Image Library, and research system. Each term represents a specific engine behavior, actor pattern, spike type, timing concept, or structural trigger.
 
-Actor Types
-Primary Actor
-The dominant structural participant responsible for major spike ignition and engine pressure.
+## Actor Types
 
-Secondary Actor
-A supporting actor that interacts with primary actor behavior but does not initiate major structural events.
+- **Primary Actor:** The dominant structural participant responsible for major spike ignition and engine pressure.
 
-Synthetic Actor
-An artificial engine participant responsible for synthetic spikes, timing sync, and engineered structural behavior.
+- **Secondary Actor:** A supporting actor that interacts with primary actor behavior but does not initiate major structural events.
 
-Drift Actor
-An actor that maintains low‑pressure movement and contributes to drift floors and slow structural shifts.
+- **Synthetic Actor:** An artificial engine participant responsible for synthetic spikes, timing sync, and engineered structural behavior.
 
-Purge Actor
-An actor responsible for purge triggers, structural resets, and deep engine cleanouts.
+- **Drift Actor:** An actor that maintains low‑pressure movement and contributes to drift floors and slow structural shifts.
 
-Spike Types
-Natural Spike
-A spike caused by organic market behavior, actor pressure, or structural imbalance.
+- **Purge Actor:** An actor responsible for purge triggers, structural resets, and deep engine cleanouts.
 
-Synthetic Spike
-A spike caused by artificial engine behavior, timing sync, or engineered ignition.
+## Spike Types
 
-Flat Spike
-A spike with minimal vertical displacement, typically found in flat‑spike markets.
+- **Natural Spike:** A spike caused by organic market behavior, actor pressure, or structural imbalance.
 
-Cluster Spike
-A group of spikes occurring in rapid succession, often indicating actor conflict or engine instability.
+- **Synthetic Spike:** A spike caused by artificial engine behavior, timing sync, or engineered ignition.
 
-Ignition Spike
-The first spike in a sequence that triggers a structural chain reaction.
+- **Flat Spike:** A spike with minimal vertical displacement, typically found in flat‑spike markets.
 
-Movement Families
-Geometry Break
-A structural break in movement geometry indicating actor intervention or engine shift.
+- **Cluster Spike:** A group of spikes occurring in rapid succession, often indicating actor conflict or engine instability.
 
-Inversion Marker
-A signal that the engine is reversing direction or switching movement type.
+- **Ignition Spike:** The first spike in a sequence that triggers a structural chain reaction.
 
-Drift Floor
-A low‑pressure movement zone where actors maintain minimal structural influence.
+## Movement Families
 
-Purge Trigger
-A structural event that resets engine behavior and clears accumulated pressure.
+- **Geometry Break:** A structural break in movement geometry indicating actor intervention or engine shift.
 
-Anchor Condition
-A stable structural point used to classify movement type and engine behavior.
+- **Inversion Marker:** A signal that the engine is reversing direction or switching movement type.
 
-Memory Taps
-Memory Band
-A depth zone where the engine stores structural memory.
+- **Drift Floor:** A low‑pressure movement zone where actors maintain minimal structural influence.
 
-Memory Tap
-An interaction with a memory band that triggers a structural reaction.
+- **Purge Trigger:** A structural event that resets engine behavior and clears accumulated pressure.
 
-Tap Frequency
-How often the engine interacts with memory bands.
+- **Anchor Condition:** A stable structural point used to classify movement type and engine behavior.
 
-Tap Outcome
-The structural result of a memory tap (e.g., spike, drift, purge).
+## Memory Taps
 
-Engine States
-Stable Engine
-An engine with predictable movement, consistent spike intervals, and low actor conflict.
+- **Memory Band:** A depth zone where the engine stores structural memory.
 
-Unstable Engine
-An engine with irregular spikes, actor conflict, and unpredictable structural behavior.
+- **Memory Tap:** An interaction with a memory band that triggers a structural reaction.
 
-Coil State
-A compressed structural state preceding a spike or purge.
+- **Tap Frequency:** How often the engine interacts with memory bands.
 
-Dump State
-A rapid downward structural movement often followed by recovery.
+- **Tap Outcome:** The structural result of a memory tap (e.g., spike, drift, purge).
 
-Recovery Signature
-A pattern showing how the engine recovers after a dump or spike.
+## Engine States
 
-Timing Concepts
-Shared Timing
-Cross‑market synthetic timing synchronization.
+- **Stable Engine:** An engine with predictable movement, consistent spike intervals, and low actor conflict.
 
-Timing Sync
-A structural alignment between markets or actors.
+- **Unstable Engine:** An engine with irregular spikes, actor conflict, and unpredictable structural behavior.
 
-Pre‑Ignition Window
-The structural period before a spike or synthetic ignition.
+- **Coil State:** A compressed structural state preceding a spike or purge.
 
-Timing Cluster
-Multiple timing events occurring close together.
+- **Dump State:** A rapid downward structural movement often followed by recovery.
 
-Candle Behavior
-Structural Candle
-A candle whose shape reflects engine behavior rather than price alone.
+- **Recovery Signature:** A pattern showing how the engine recovers after a dump or spike.
 
-Compression Candle
-A candle showing structural compression before a spike.
+## Timing Concepts
 
-Expansion Candle
-A candle showing structural expansion after a spike or purge.
+- **Shared Timing:** Cross‑market synthetic timing synchronization.
 
-Reversal Candle
-A candle indicating actor inversion or movement shift.
+- **Timing Sync:** A structural alignment between markets or actors.
 
-Liquidation Concepts
-Liquidation Cluster
-A group of liquidations occurring in a short timeframe.
+- **Pre‑Ignition Window:** The structural period before a spike or synthetic ignition.
 
-Cascade Depth
-The structural depth of a liquidation sequence.
+- **Timing Cluster:** Multiple timing events occurring close together.
 
-Recovery Strength
-How strongly the engine recovers after a liquidation event.
+## Candle Behavior
 
-Pattern Ontology
-Structural Pattern
-A recurring engine behavior that can be classified and stored.
+- **Structural Candle:** A candle whose shape reflects engine behavior rather than price alone.
 
-Trigger Condition
-The structural condition required for a pattern to activate.
+- **Compression Candle:** A candle showing structural compression before a spike.
 
-Pattern Outcome
-The expected result of a structural pattern.
+- **Expansion Candle:** A candle showing structural expansion after a spike or purge.
 
-Screenshot Reference
-An image linked to a pattern for visual classification.
+- **Reversal Candle:** A candle indicating actor inversion or movement shift.
 
-Market Personality
-Aggressive Market
-High spike frequency, strong actor pressure, unstable engine.
+## Liquidation Concepts
 
-Passive Market
-Low spike frequency, weak actor pressure, stable engine.
+- **Liquidation Cluster:** A group of liquidations occurring in a short timeframe.
 
-Synthetic Market
-Engine behavior dominated by synthetic actors and timing sync.
+- **Cascade Depth:** The structural depth of a liquidation sequence.
 
-Flat‑Spike Market
-Markets with minimal spike displacement and unique structural behavior.
+- **Recovery Strength:** How strongly the engine recovers after a liquidation event.
 
-General Structural Terms
-Engine
-The underlying structural system driving market behavior.
+## Pattern Ontology
 
-Actor
-A structural participant influencing engine behavior.
+- **Structural Pattern:** A recurring engine behavior that can be classified and stored.
 
-Spike
-A rapid structural movement caused by actor pressure or synthetic ignition.
+- **Trigger Condition:** The structural condition required for a pattern to activate.
 
-Drift
-Low‑pressure movement with minimal actor influence.
+- **Pattern Outcome:** The expected result of a structural pattern.
 
-Purge
-A structural reset clearing accumulated engine pressure.
+- **Screenshot Reference:** An image linked to a pattern for visual classification.
 
-Ontology
-The classification system for structural patterns.
+## Market Personality
+
+- **Aggressive Market:** High spike frequency, strong actor pressure, unstable engine.
+
+- **Passive Market:** Low spike frequency, weak actor pressure, stable engine.
+
+- **Synthetic Market:** Engine behavior dominated by synthetic actors and timing sync.
+
+- **Flat‑Spike Market:** Markets with minimal spike displacement and unique structural behavior.
+
+## General Structural Terms
+
+- **Engine:** The underlying structural system driving market behavior.
+
+- **Actor:** A structural participant influencing engine behavior.
+
+- **Spike:** A rapid structural movement caused by actor pressure or synthetic ignition.
+
+- **Drift:** Low‑pressure movement with minimal actor influence.
+
+- **Purge:** A structural reset clearing accumulated engine pressure.
+
+- **Ontology:** The classification system for structural patterns.
