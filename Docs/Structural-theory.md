@@ -1,384 +1,435 @@
-This is the deep theory chapter of Division‑K: the “why” behind synthetic engines, actors, spikes, timing, candles, liquidations, and patterns.
-It ties everything together at the conceptual level.
+# Structural Theory
 
-Structural Theory
 Division‑K structural theory explains why markets behave the way they do at the engine level. It defines the underlying mechanics, actors, spike ignition logic, timing synchronization, candle behavior, liquidation cascades, and pattern ontology that drive synthetic and natural market movement.
 
 This document provides the theoretical foundation for the Master Schema, Proto‑Database, Image Library, and all future Division‑K tools.
 
-1. What Structural Trading Is
-Structural trading is the study of engine behavior, not price behavior.
+---
+
+## 1. What Structural Trading Is
+
+Structural trading is the study of **engine behavior**, not price behavior.
 
 Instead of analyzing:
 
-indicators
+- indicators
 
-oscillators
+- oscillators
 
-chart patterns
+- chart patterns
 
-price action
+- price action
 
 Division‑K focuses on:
 
-actor pressure
+- actor pressure
 
-spike ignition
+- spike ignition
 
-engine states
+- engine states
 
-timing sync
+- timing sync
 
-structural candles
+- structural candles
 
-liquidation cascades
+- liquidation cascades
 
-movement families
+- movement families
 
-memory‑tap interactions
+- memory‑tap interactions
 
-The goal is to understand the engine, not the chart.
+The goal is to understand **the engine**, not the chart.
 
-2. Synthetic Engine Behavior
+---
+
+## 2. Synthetic Engine Behavior
+
 Synthetic engines behave differently from natural markets.
 
-Key synthetic traits
-predictable spike intervals
+### Key synthetic traits
 
-engineered timing sync
+- predictable spike intervals
 
-actor spacing rules
+- engineered timing sync
 
-memory‑band interactions
+- actor spacing rules
 
-controlled dump/recovery signatures
+- memory‑band interactions
 
-flat‑spike markets
+- controlled dump/recovery signatures
 
-multi‑market ignition chains
+- flat‑spike markets
 
-Synthetic engines follow rules, not randomness.
+- multi‑market ignition chains
+
+Synthetic engines follow **rules**, not randomness.
 
 These rules are captured in:
 
-engine_map
+- engine_map
 
-movement_family
+- movement_family
 
-actor_registry
+- actor_registry
 
-memory_taps
+- memory_taps
 
-synthetic_spikes
+- synthetic_spikes
 
-synthetic_shared_timing
+- synthetic_shared_timing
 
-3. Actor Behavior Theory
+---
+
+## 3. Actor Behavior Theory
+
 Actors are structural participants that influence engine behavior.
 
-Actor traits
-spacing rules
+### Actor traits
 
-fingerprint geometry
+- spacing rules
 
-pressure signatures
+- fingerprint geometry
 
-inversion markers
+- pressure signatures
 
-purge triggers
+- inversion markers
 
-drift maintenance
+- purge triggers
 
-Actor interactions
+- drift maintenance
+
+### Actor interactions
+
 Actors interact with:
 
-spikes
+- spikes
 
-candles
+- candles
 
-memory bands
+- memory bands
 
-liquidation events
+- liquidation events
 
-synthetic timing
+- synthetic timing
 
 Actor behavior is stored in:
 
-actor_registry
+- actor_registry
 
-price_spikes
+- price_spikes
 
-movement_family
+- movement_family
 
-memory_taps
+- memory_taps
 
-4. Spike Theory
+---
+
+## 4. Spike Theory
+
 Spikes are the engine’s primary structural output.
 
-Types of spikes
-natural
+### Types of spikes
 
-synthetic
+- natural
 
-flat
+- synthetic
 
-cluster
+- flat
 
-ignition
+- cluster
 
-Spike mechanics
+- ignition
+
+### Spike mechanics
+
 Spikes occur due to:
 
-actor pressure
+- actor pressure
 
-memory‑tap triggers
+- memory‑tap triggers
 
-timing sync
+- timing sync
 
-engine coil compression
+- engine coil compression
 
-synthetic ignition windows
+- synthetic ignition windows
 
-Spike structure
+### Spike structure
+
 Each spike has:
 
-a pre‑state
+- a pre‑state
 
-an ignition point
+- an ignition point
 
-a post‑state
+- a post‑state
 
-actor attribution
+- actor attribution
 
-structural outcome
+- structural outcome
 
 Spike theory is stored in:
 
-price_spikes
+- price_spikes
 
-synthetic_spikes
+- synthetic_spikes
 
-movement_family
+- movement_family
 
-actor_registry
+- actor_registry
 
-5. Timing Theory
+---
+
+## 5. Timing Theory
+
 Timing is the engine’s internal clock.
 
-Timing concepts
-shared timing
+### Timing concepts
 
-synthetic sync
+- shared timing
 
-ignition windows
+- synthetic sync
 
-timing clusters
+- ignition windows
 
-pre‑ignition states
+- timing clusters
 
-Cross‑market timing
+- pre‑ignition states
+
+### Cross‑market timing
+
 Synthetic engines often synchronize across markets:
 
-BILL → OSMO
+- BILL → OSMO
 
-OSMO → DOGE
+- OSMO → DOGE
 
-DOGE → SOL
+- DOGE → SOL
 
-etc.
+- etc.
 
 Timing theory is stored in:
 
-synthetic_shared_timing
+- synthetic_shared_timing
 
-synthetic_spikes
+- synthetic_spikes
 
-candle tables
+- candle tables
 
-6. Candle Behavior Theory
+---
+
+## 6. Candle Behavior Theory
+
 Candles are structural outputs, not price outputs.
 
-Structural candle types
-compression
+### Structural candle types
 
-expansion
+- compression
 
-reversal
+- expansion
 
-drift
+- reversal
 
-purge
+- drift
 
-ignition
+- purge
 
-Multi‑timeframe structure
+- ignition
+
+### Multi‑timeframe structure
+
 Candle behavior is tracked across:
 
-1M
+- 1M
 
-15M
+- 15M
 
-1H
+- 1H
 
 Each timeframe reveals different engine layers.
 
 Candle theory is stored in:
 
-candle_1m
+- candle_1m
 
-candle_15m
+- candle_15m
 
-candle_1h
+- candle_1h
 
-7. Liquidation Theory
+---
+
+## 7. Liquidation Theory
+
 Liquidations are structural collapse events.
 
-Liquidation traits
-cluster density
+### Liquidation traits
 
-cascade depth
+- cluster density
 
-actor reaction
+- cascade depth
 
-recovery strength
+- actor reaction
 
-Structural meaning
+- recovery strength
+
+### Structural meaning
+
 Liquidations reveal:
 
-actor dominance
+- actor dominance
 
-engine instability
+- engine instability
 
-purge triggers
+- purge triggers
 
-recovery signatures
+- recovery signatures
 
 Liquidation theory is stored in:
 
-liquidation_events
+- liquidation_events
 
-8. Pattern Ontology Theory
+---
+
+## 8. Pattern Ontology Theory
+
 Patterns are structural behaviors that repeat across markets.
 
-Pattern components
-conditions
+### Pattern components
 
-triggers
+- conditions
 
-behavior
+- triggers
 
-outcome
+- behavior
 
-screenshot reference
+- outcome
 
-Ontology purpose
+- screenshot reference
+
+### Ontology purpose
+
 Patterns allow:
 
-classification
+- classification
 
-prediction
+- prediction
 
-engine mapping
+- engine mapping
 
-actor identification
+- actor identification
 
-synthetic tracking
+- synthetic tracking
 
 Pattern ontology is stored in:
 
-patterns
+- patterns
 
-9. Market Personality Theory
+---
+
+## 9. Market Personality Theory
+
 Each market has a unique personality.
 
-Personality traits
-aggressive
+### Personality traits
 
-passive
+- aggressive
 
-synthetic
+- passive
 
-flat‑spike
+- synthetic
 
-unstable
+- flat‑spike
 
-stable
+- unstable
 
-Personality drivers
-actor composition
+- stable
 
-spike frequency
+### Personality drivers
 
-timing sync
+- actor composition
 
-movement families
+- spike frequency
 
-memory‑tap frequency
+- timing sync
+
+- movement families
+
+- memory‑tap frequency
 
 Market personality is stored in:
 
-markets
+- markets
 
-daily_logs
+- daily_logs
 
-10. Engine Evolution Theory
+---
+
+## 10. Engine Evolution Theory
+
 Engines evolve over time.
 
-Evolution traits
-spike interval changes
+### Evolution traits
 
-actor fingerprint shifts
+- spike interval changes
 
-movement‑family transitions
+- actor fingerprint shifts
 
-memory‑band drift
+- movement‑family transitions
 
-timing‑sync expansion
+- memory‑band drift
 
-synthetic ignition frequency
+- timing‑sync expansion
+
+- synthetic ignition frequency
 
 Engine evolution is derived from:
 
-engine_map
+- engine_map
 
-movement_family
+- movement_family
 
-actor_registry
+- actor_registry
 
-synthetic_shared_timing
+- synthetic_shared_timing
 
-11. How Structural Theory Connects to the Schema
+---
+
+## 11. How Structural Theory Connects to the Schema
+
 Structural theory is the conceptual foundation for:
 
-the 20‑Layer Master Schema
+- the 20‑Layer Master Schema
 
-the Proto‑Database
+- the Proto‑Database
 
-the Image Library
+- the Image Library
 
-future dashboards
+- future dashboards
 
-future tools
+- future tools
 
-future automation
+- future automation
 
 Every schema layer represents a structural concept defined in this document.
 
-12. How Structural Theory Connects to SQL
+---
+
+## 12. How Structural Theory Connects to SQL
+
 Each theoretical concept maps directly to a SQL table.
 
 Examples:
 
-spike theory → price_spikes
+- spike theory → price_spikes
 
-actor theory → actor_registry
+- actor theory → actor_registry
 
-timing theory → synthetic_shared_timing
+- timing theory → synthetic_shared_timing
 
-candle theory → candle tables
+- candle theory → candle tables
 
-liquidation theory → liquidation_events
+- liquidation theory → liquidation_events
 
-ontology theory → patterns
+- ontology theory → patterns
 
 This creates a complete structural system.
