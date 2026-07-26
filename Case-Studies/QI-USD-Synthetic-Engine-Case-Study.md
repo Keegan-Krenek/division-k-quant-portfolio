@@ -143,5 +143,5 @@ Pre‑Ignite Spike Chart
 [\kedgann\division-k-quant-portfolio\Image-Library\Flat-Spike-Markets\PIRATE-USD-Flat Snythetic price spike with possible runtime & Price drops before next ignition.png](https://github.com/kedgann/division-k-quant-portfolio/blob/5f8bc37288be44d15bd218f954305e1410413286/Image-Library/Flat-Spike-Markets/PIRATE-USD-Flat%20Snythetic%20price%20spike%20with%20possible%20runtime%20%26%20Price%20drops%20before%20next%20ignition.png)
 
 Ladder‑Up Highlight Chart
-
+[\kedgann\division-k-quant-portfolio\Image-Library\Spike-Patterns\QI-USD Ladder & Pre-ignition spikes 2026-07-26 033717.png](https://github.com/kedgann/division-k-quant-portfolio/blob/7b0759b57360504446513ed4b09d2b375a3f4899/Image-Library/Spike-Patterns/QI-USD%20Ladder%20%26%20Pre-ignition%20spikes%202026-07-26%20033717.png)
 Engine Memory thread/band Snap Chart
