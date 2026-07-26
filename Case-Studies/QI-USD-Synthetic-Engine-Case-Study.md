@@ -144,5 +144,6 @@ Pre‑Ignite Spike Chart
 
 Ladder‑Up Highlight Chart
 [\kedgann\division-k-quant-portfolio\Image-Library\Spike-Patterns\QI-USD Ladder & Pre-ignition spikes 2026-07-26 033717.png](https://github.com/kedgann/division-k-quant-portfolio/blob/7b0759b57360504446513ed4b09d2b375a3f4899/Image-Library/Spike-Patterns/QI-USD%20Ladder%20%26%20Pre-ignition%20spikes%202026-07-26%20033717.png)
+
 Engine Memory thread/band Snap Chart
 [\kedgann\division-k-quant-portfolio\Image-Library\Engine-Maps\QI-USD Engine Memory band snap with notes 2026-07-26 035038.png](https://github.com/kedgann/division-k-quant-portfolio/blob/d615adf15a258576ff98a885e5f555d2f2877f0f/Image-Library/Engine-Maps/QI-USD%20Engine%20Memory%20band%20snap%20with%20notes%202026-07-26%20035038.png)
