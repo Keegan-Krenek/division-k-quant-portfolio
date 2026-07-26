@@ -1,71 +1,82 @@
-Layer 8 — Synthetic Engine Evolution
-Engine Mutation, State Transitions, Synthetic/Natural Drift, Structural Aging & Multi‑Phase Evolution Cycles
+# Layer 8 — Engine Evolution
 
+Layer 8 tracks how engines evolve over time.  
+Engine evolution is the long‑cycle transformation of structural behavior — including burst‑family changes, synthetic‑engine adaptation, timing‑window shifts, actor‑pressure transitions, and geometry‑identity mutations.
 
-🔹 Contents
-File:
+This layer explains how markets move from one structural identity to another, and how synthetic engines adjust their behavior across days, weeks, and months.
 
-layer8-Synthetic Engine Evolution.md
+---
 
-Includes:
+## Purpose of This Layer
 
-Engine evolution logs
+Use Layer 8 to:
 
-Evolution phase classification
+- track long‑cycle engine evolution  
+- identify changes in burst families  
+- detect synthetic‑engine adaptation  
+- observe timing‑window shifts  
+- analyze actor‑pressure transitions  
+- correlate evolution with patterns and spikes  
+- support forecasting and structural prediction  
 
-Synthetic → natural transitions
+Engine evolution reveals **how engines learn**, **how synthetic systems adapt**, and **how structural identity changes over time**.
 
-Natural → synthetic transitions
+---
 
-Hybrid evolution
+## What This Layer Contains
 
-Structural decay & repair notes
+- engine identity  
+- evolution phase  
+- burst‑family changes  
+- synthetic‑engine behavior changes  
+- timing‑window shifts  
+- actor‑pressure transitions  
+- geometry‑identity changes  
+- long‑cycle notes  
+- cross‑market evolution sync  
 
-Actor & book evolution
+Each entry represents a complete engine‑evolution phase.
 
-Spike‑profile evolution
+---
 
-Pattern evolution
+## Connections to Other Layers
 
-🔹 Evolution Phases
+### Master Schema  
+Layer 8 corresponds to **Engine Evolution** in the 20‑Layer Master Schema.
 
-| **Phase** | **Definition** |
-| --- | --- |
-| **Synthetic Ignition** | Engine begins synthetic activity (bursts, flicks, ladders) |
-| **Synthetic Dominance** | Engine fully synthetic; high actor presence |
-| **Hybrid Drift** | Synthetic activity slows; natural drift emerges |
-| **Natural Recovery** | Engine returns to natural behavior |
-| **Natural Decay** | Engine loses structure; drift corridors widen |
-| **Synthetic Re‑Ignition** | Synthetic actors return; engine becomes synthetic again |
+### Proto‑Database  
+Maps to the SQL table:  
+- `engine_evolution`
 
+### Image Library  
+References visuals from:  
+- Pattern‑Families  
+- Synthetic‑Spikes  
+- Shared‑Timing  
+- Burst‑Cycles  
+- Forecasting Models  
 
-| **Column** | **Purpose** |
-| --- | --- |
-| **Market** | Which engine is evolving |
-| **Evolution Phase** | Ignition / Dominance / Drift / Recovery / Decay / Re‑Ignition |
-| **Start Time (PDT)** | When the phase began |
-| **End Time (PDT)** | When the phase ended |
-| **Duration** | Length of the phase |
-| **Actor Presence** | Low / medium / high |
-| **Book State** | Thick / thin / hollow |
-| **Spike Profile** | Synthetic / natural / hybrid |
-| **Memory Interaction** | Reinforcement / violation / none |
-| **Pattern Interaction** | Burst / coil / ladder / drift / ignition |
-| **Structure Before** | Engine state before the phase |
-| **Structure After** | Engine state after the phase |
-| **Notes** | Freeform structural notes |
+---
 
-🔹 Navigation
-Jump to related layers:
+## Why Layer 8 Matters
 
-Layer 7.1 — Synthetic Market Tracker
+Engine evolution enables:
 
-Layer 7.2 — Patterns
+- long‑cycle forecasting  
+- synthetic‑engine detection  
+- burst‑family mutation tracking  
+- timing‑cycle prediction  
+- structural identity modeling  
 
-Layer 6.6 — Synthetic Spikes
+This layer is essential for understanding how engines change over time.
 
-Layer 6.7 — Synthetic Shared Timing
+---
 
-Layer 4.2 — Movement‑Family Behavior
+## Future Expansion
 
-Layer 4.3 — Actor Registry
+Planned improvements include:
+
+- automated evolution‑phase detection  
+- evolution‑family clustering  
+- actor‑pressure scoring  
+- evolution‑to‑forecast mapping  

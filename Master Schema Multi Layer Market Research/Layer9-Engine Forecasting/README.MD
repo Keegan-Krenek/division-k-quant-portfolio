@@ -1,61 +1,85 @@
-Layer 9 — Engine Forecasting
-Predictive Engine Modeling, Synthetic Timing Forecasts, Pattern Continuation & Structural Outcome Projection
+# Layer 9 — Engine Forecasting
 
+Layer 9 generates structural forecasts for each market engine.  
+Forecasts are based on spike systems, synthetic behavior, burst families, timing windows, patterns, and engine‑evolution phases.  
+This layer predicts how engines will behave in future cycles — not price targets, but structural outcomes.
 
-Includes:
+Engine forecasting identifies the next likely structural phase of an engine.
 
-Forecast logs
+---
 
-Forecast confidence levels
+## Purpose of This Layer
 
-Synthetic timing predictions
+Use Layer 9 to:
 
-Pattern continuation predictions
+- forecast burst‑family outcomes  
+- predict synthetic ignition windows  
+- anticipate timing‑cycle shifts  
+- identify actor‑pressure transitions  
+- project geometry changes (coil → drift → hollow → ladder)  
+- detect upcoming macro‑cycle transitions  
+- support trading intelligence and engine modeling  
 
-Structural transition predictions
+Forecasts reveal **what the engine is preparing to do next**.
 
-Macro cycle projections
+---
 
-Actor & book state projections
+## What This Layer Contains
 
-Memory‑band interaction forecasts
-🔹 Forecast Types
+- market name  
+- current engine phase  
+- next predicted phase  
+- burst‑family forecast  
+- synthetic‑engine forecast  
+- timing‑window forecast  
+- actor‑pressure forecast  
+- geometry forecast  
+- confidence level  
+- structural notes  
 
-| **Forecast Type** | **Definition** |
-| --- | --- |
-| **Synthetic Timing Forecast** | Predicts synthetic bursts, flicks, ladders |
-| **Pattern Continuation Forecast** | Predicts continuation of existing patterns |
-| **Structural Transition Forecast** | Predicts transitions between engine states |
-| **Memory Interaction Forecast** | Predicts upcoming taps or violations |
-| **Macro Cycle Forecast** | Predicts multi‑hour or multi‑day cycles |
-| **Actor/Book State Forecast** | Predicts actor presence and book thickness |
+Each entry represents a complete engine‑forecast profile.
 
+---
 
-| **Column** | **Purpose** |
-| --- | --- |
-| **Market** | Which engine is being forecasted |
-| **Forecast Type** | Timing / Pattern / Structural / Memory / Macro / Actor/Book |
-| **Forecast Window** | Time window for the prediction |
-| **Forecast Event** | What is expected to occur |
-| **Confidence Level** | Low / medium / high |
-| **Actor Projection** | Expected actor presence |
-| **Book Projection** | Expected book state |
-| **Memory Projection** | Expected memory interaction |
-| **Pattern Projection** | Expected pattern continuation |
-| **Structural Projection** | Expected structural outcome |
-| **Notes** | Freeform forecast notes |
+## Connections to Other Layers
 
-🔹 Navigation
-Jump to related layers:
+### Master Schema  
+Layer 9 corresponds to **Engine Forecasting** in the 20‑Layer Master Schema.
 
-Layer 8 — Synthetic Engine Evolution
+### Proto‑Database  
+Maps to the SQL table:  
+- `engine_forecasting`
 
-Layer 7.2 — Patterns
+### Image Library  
+References visuals from:  
+- Engine‑Evolution  
+- Pattern‑Families  
+- Synthetic‑Spikes  
+- Timing‑Cycles  
+- Burst‑Cycles  
 
-Layer 7.1 — Synthetic Market Tracker
+---
 
-Layer 6.6 — Synthetic Spikes
+## Why Layer 9 Matters
 
-Layer 6.7 — Synthetic Shared Timing
+Engine forecasting enables:
 
-Layer 4.3 — Actor Registry
+- structural prediction  
+- synthetic‑cycle anticipation  
+- burst‑family modeling  
+- timing‑cycle forecasting  
+- actor‑pressure projection  
+- macro‑cycle planning  
+
+This layer is essential for transforming structural analysis into actionable intelligence.
+
+---
+
+## Future Expansion
+
+Planned improvements include:
+
+- automated forecasting models  
+- confidence‑scoring algorithms  
+- pattern‑to‑forecast mapping  
+- synthetic‑cycle prediction engines  

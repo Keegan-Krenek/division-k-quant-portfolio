@@ -1,88 +1,82 @@
-Layer 6.7 — Synthetic Shared Timing
-Cross‑Market Timing Windows, Coordinated Synthetic Behavior & Engine Synchronization
+# Layer 6.7 — Synthetic Shared Timing
 
-🔹 Shared Timing Types
+Layer 6.7 tracks synthetic shared‑timing events across markets.  
+Shared timing occurs when multiple synthetic engines ignite, reset, dump, or burst within the same time window — often within seconds or minutes of each other.
 
-| **Timing Type** | **Definition** |
-| --- | --- |
-| **Synchronized Burst Window** | Multiple markets fire synthetic bursts within the same minute |
-| **Shared Flick Cluster** | Multiple markets flick within a tight timing window |
-| **Cross‑Market Ladder Climb** | Ladder bots climb shelves across markets simultaneously |
-| **Synthetic Dump Window** | Multiple markets dump at the same time |
-| **Synthetic V‑Recovery Window** | Multiple markets recover in synchronized V‑shape |
-| **Ignition Cycle Alignment** | Multi‑hour ignition cycles begin across markets together |
-| **Memory Reinforcement Sync** | Synthetic taps occur across markets at the same time |
+This layer reveals coordinated synthetic behavior, actor synchronization, and multi‑market timing cycles.
 
+---
 
+## Purpose of This Layer
 
-| **Column** | **Purpose** |
-| --- | --- |
-| **Timestamp (PDT)** | Exact timing window |
-| **Markets Involved** | Markets that fired synthetic events |
-| **Synthetic Type** | Burst / Flick / Ladder / Dump / V / Reinforcement |
-| **Spike Sizes** | Magnitude per market |
-| **Actor Timing** | Actor cluster involvement |
-| **Book Behavior** | Thick / thin / hollow per market |
-| **Memory Interaction** | Reinforcement / violation |
-| **Structure Before** | Engine state before the timing window |
-| **Structure After** | Engine state after the timing window |
-| **Notes** | Freeform structural notes |
-
-
-🔹 Contents
-File:
-
-layer6.7-Synthetic Shared Timing.md
-
-Includes:
-
-Shared timing logs
-
-Timing cluster classification
-
-Cross‑market synthetic spike alignment
-
-Actor cluster synchronization notes
-
-Book behavior notes
-
-Structural notes
-
-Multi‑engine burst windows
-
-Synthetic ignition cycle mapping
-
-🔹 Navigation
-Jump to related layers:
-
-Layer 6 — Price Spikes
-
-Layer 6.1–6.6 — Spike & Synthetic Layers
-
-Layer 4.3 — Actor Registry
-
-Layer 7.1 — Synthetic Market Tracker
-
-Layer 7.2 — Patterns
-
-
-🔹 Usage
 Use Layer 6.7 to:
 
-Identify cross‑market synthetic coordination
+- identify shared timing windows across markets  
+- track synchronized synthetic spikes  
+- detect coordinated dumps and resets  
+- measure timing‑window duration and intensity  
+- analyze actor behavior during timing sync  
+- correlate timing windows with liquidation cycles  
+- support pattern and engine‑evolution analysis  
 
-Track shared timing clusters
+Shared timing reveals **synthetic coordination**, **actor synchronization**, and **engine‑level timing cycles**.
 
-Detect synchronized bursts, flicks, ladders
+---
 
-Map synthetic dump → synthetic V windows
+## What This Layer Contains
 
-Diagnose actor cluster synchronization
+- timing window timestamps  
+- markets involved  
+- spike counts  
+- largest spike size  
+- peak price  
+- dump events  
+- pre‑ignition notes  
+- actor notes  
+- movement‑sync confirmation  
+- freeform structural notes  
 
-Build multi‑engine case studies
+Each entry represents a complete shared‑timing window.
 
-Feed synthetic market tracker (Layer 7.1)
+---
 
-Build synthetic pattern recognition (Layer 7.2)
+## Connections to Other Layers
 
+### Master Schema  
+Layer 6.7 corresponds to **Synthetic Shared Timing** in the 20‑Layer Master Schema.
 
+### Proto‑Database  
+Maps to the SQL table:  
+- `synthetic_shared_timing`
+
+### Image Library  
+References visuals from:  
+- Shared‑Market‑Timing  
+- Synthetic‑Spikes  
+- Liquidation‑Events  
+- Candle‑Sequences  
+
+---
+
+## Why Layer 6.7 Matters
+
+Shared timing enables:
+
+- synthetic‑engine detection  
+- multi‑market spike correlation  
+- actor‑coordination analysis  
+- timing‑cycle forecasting  
+- pattern‑family alignment  
+
+This layer is essential for understanding coordinated synthetic behavior.
+
+---
+
+## Future Expansion
+
+Planned improvements include:
+
+- automated timing‑window detection  
+- timing‑cycle classification  
+- actor‑sync scoring  
+- multi‑market timing dashboards  

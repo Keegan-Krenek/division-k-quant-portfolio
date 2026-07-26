@@ -1,155 +1,88 @@
-Layer 8 — Synthetic Engine Evolution
-Engine Mutation, State Transitions, Synthetic/Natural Drift, Structural Aging & Multi‑Phase Evolution Cycles
+# Layer 8 — Engine Evolution (Full Data)
 
-🔹 Purpose
-Layer 8 models engine evolution — how synthetic and natural engines change over time.
+This file contains the complete engine‑evolution dataset for all markets.  
+Add your raw evolution entries directly into this file.
 
-This layer captures:
+---
 
-synthetic → natural transitions
+## Column Definitions
 
-natural → synthetic transitions
+| Column | Purpose |
+|--------|---------|
+| **Market** | Market name |
+| **Evolution Phase** | Phase of engine evolution |
+| **Burst Family Change** | How burst behavior changed |
+| **Synthetic Behavior Change** | How synthetic engine adapted |
+| **Timing Window Shift** | Change in timing‑window behavior |
+| **Actor Pressure Change** | Change in actor involvement |
+| **Geometry Identity Change** | Change in structural geometry |
+| **Long‑Cycle Notes** | Multi‑day or multi‑week notes |
+| **Cross‑Market Sync** | Whether evolution matches other markets |
+| **Extra Notes** | Additional structural behavior |
 
-hybridization
+---
 
-engine aging
+## Column Layout
 
-structural decay
+Market | Evolution Phase | Burst Family Change | Synthetic Behavior Change | Timing Window Shift | Actor Pressure Change | Geometry Identity Change | Long‑Cycle Notes | Cross‑Market Sync | Extra Notes
 
-structural repair
+---
 
-ceiling migration evolution
+# Engine Evolution Entries  
+*(Add your raw evolution entries below.)*
 
-drift‑floor evolution
+### Example Evolution Entry (Template)
 
-actor‑presence evolution
+**Market:** ERA  
+**Evolution Phase:** Phase 2 — Burst‑Cascade Mutation  
+**Burst Family Change:** Shift from 2‑peak to 3‑peak burst cycles  
+**Synthetic Behavior Change:** Synthetic resets appear earlier in cycle  
+**Timing Window Shift:** Timing windows moved from 15m → 5m  
+**Actor Pressure Change:** Actors switched from drift‑support to burst‑support  
+**Geometry Identity Change:** Drift floor became unstable → hollow zone  
+**Long‑Cycle Notes:** Multi‑day burst cycles forming  
+**Cross‑Market Sync:** Matches 00‑USD and GST  
+**Extra Notes:** Actors appear to be burst‑cascade bots  
 
-book‑state evolution
+---
 
-spike‑profile evolution
+### Example Evolution Entry (Template)
 
-pattern evolution
+**Market:** QI‑USD  
+**Evolution Phase:** Phase 3 — Synthetic Timing Engine  
+**Burst Family Change:** Single‑burst → rolling‑hill burst pattern  
+**Synthetic Behavior Change:** Synthetic wick‑signal appears 3–5 candles before ignition  
+**Timing Window Shift:** Timing windows moved from hourly → 30m  
+**Actor Pressure Change:** Actors increased pressure during cooldown dips  
+**Geometry Identity Change:** Hollow‑book zones expanded  
+**Long‑Cycle Notes:** Multi‑day repeating pattern  
+**Cross‑Market Sync:** Partial sync with GFI‑USD  
+**Extra Notes:** Spike volume signature 1.5–7M  
 
-multi‑phase engine cycles
+---
 
-🔹 Example Engine Evolution Records
+### Example Evolution Entry (Template)
 
-JTO — Synthetic Dominance → Hybrid Drift
+**Market:** IMU  
+**Evolution Phase:** Phase 4 — Mechanical Burst Engine  
+**Burst Family Change:** Burst → step → burst → step pattern  
+**Synthetic Behavior Change:** Synthetic resets drop 30 points consistently  
+**Timing Window Shift:** Timing windows moved from 1h → 15m  
+**Actor Pressure Change:** Actors maintain structure during downward steps  
+**Geometry Identity Change:** Lower lows forming → possible retest  
+**Long‑Cycle Notes:** 26‑day cooldown before ignition  
+**Cross‑Market Sync:** Matches GST mechanical behavior  
+**Extra Notes:** Mechanical burst family still unknown  
 
-| Field | Value |
-| --- | --- |
-| Market | JTO |
-| Evolution Phase | Synthetic Dominance → Hybrid Drift |
-| Start Time | 14:00 |
-| End Time | 15:30 |
-| Duration | 90 min |
-| Actor Presence | High → medium |
-| Book State | Thin → medium |
-| Spike Profile | Synthetic → hybrid |
-| Memory Interaction | Reinforcement → shallow taps |
-| Pattern Interaction | Burst → coil → drift |
-| Structure Before | Tight synthetic coil |
-| Structure After | Hybrid drift corridor |
-| Notes | Synthetic engine began losing intensity; drift corridor formed |
+---
 
+## Notes
 
-ALLO — Synthetic Ignition → Synthetic Dominance
+Layer 8 engine evolution is used by:
 
+- Layer 9 (Forecasting)  
+- Case Studies  
+- Synthetic‑Engine Analysis  
 
-| Field | Value |
-| --- | --- |
-| Market | ALLO |
-| Evolution Phase | Synthetic Ignition → Synthetic Dominance |
-| Start Time | 11:00 |
-| End Time | 12:00 |
-| Duration | 60 min |
-| Actor Presence | Medium → high |
-| Book State | Thin → hollow |
-| Spike Profile | Synthetic |
-| Memory Interaction | Medium tap depth |
-| Pattern Interaction | Burst → ladder |
-| Structure Before | Tight coil |
-| Structure After | Full synthetic dominance |
-| Notes | Engine entered full synthetic mode; ladder bots active |
-
-
-SYND — Hybrid Drift → Natural Recovery
-
-
-| Field | Value |
-| --- | --- |
-| Market | SYND |
-| Evolution Phase | Hybrid Drift → Natural Recovery |
-| Start Time | 09:00 |
-| End Time | 10:00 |
-| Duration | 60 min |
-| Actor Presence | Medium → low |
-| Book State | Medium → thick |
-| Spike Profile | Hybrid → natural |
-| Memory Interaction | Shallow taps → none |
-| Pattern Interaction | Drift → slow recovery |
-| Structure Before | Hybrid drift corridor |
-| Structure After | Natural drift corridor |
-| Notes | Synthetic suppression window triggered natural recovery |
-
-
-XPL — Natural Decay → Synthetic Re‑Ignition
-
-| Field | Value |
-| --- | --- |
-| Market | XPL |
-| Evolution Phase | Natural Decay → Synthetic Re‑Ignition |
-| Start Time | 10:00 |
-| End Time | 11:00 |
-| Duration | 60 min |
-| Actor Presence | Low → medium |
-| Book State | Thick → thin |
-| Spike Profile | Natural → synthetic |
-| Memory Interaction | None → medium tap |
-| Pattern Interaction | Drift → ignition |
-| Structure Before | Loose natural coil |
-| Structure After | Synthetic ignition cycle |
-| Notes | Synthetic actors returned; ignition cycle began |
-
-
-
-🔹 Schema Connections
-Upstream:
-
-Layer 7.1 — Synthetic Market Tracker
-
-Layer 7.2 — Patterns
-
-Layer 6.6 — Synthetic Spikes
-
-Layer 6.7 — Synthetic Shared Timing
-
-Downstream:
-
-Layer 9 (if you build it): Engine Forecasting
-
-Pattern‑based trading logic
-
-Synthetic engine simulation models
-
-Layer 8 is the engine evolution layer that powers forecasting, simulation, and long‑term structural analysis.
-
-🔹 Usage
-Use Layer 8 to:
-
-Track synthetic → natural transitions
-
-Track natural → synthetic transitions
-
-Identify hybridization windows
-
-Diagnose engine aging
-
-Map structural decay & repair
-
-Build multi‑hour and multi‑day evolution case studies
-
-Feed forecasting models
-
-Build synthetic engine simulations
+Engine evolution reveals long‑cycle structural identity and is critical for forecasting.
 

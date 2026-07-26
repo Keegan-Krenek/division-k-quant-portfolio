@@ -1,76 +1,149 @@
-Layer 4.3 — Actor Registry
-Actor Identification, Behavioral Signatures, Book Interaction & Structural Influence
+# Layer 4.3 — Actor Registry (Full Data)
 
-Purpose
-Layer 4.3 defines the actors that drive engine behavior.
+This file contains the complete actor‑registry dataset for all structural actors.  
+It includes all columns, definitions, examples, and raw entries.
 
-Actors are the “micro‑agents” inside your synthetic or natural engines.
-They create bursts, cascades, drift floors, vacuum spikes, ceiling tests, compression phases, purges, repairs, anchors, and migrations.
+---
 
-This layer documents:
+## Actor Types & Purposes
 
-Actor types
+| Actor Type | Purpose |
+|------------|---------|
+| **Burst** | Sudden expansion bursts |
+| **Cascade** | Drives high‑velocity multi‑lane cascades |
+| **Drift** | Maintains drift corridors and forms stable drift floors |
+| **Vacuum** | Creates hollow‑book spikes and sudden displacement events |
+| **Ceiling‑Test** | Repeatedly taps the top boundary to test rejection or trigger migration |
+| **Compression** | Tightens spacing and prepares drift → expansion transitions |
+| **Purge** | Clears stacked lows/highs to reset geometry |
+| **Weaver** | Maintains corridor spacing and keeps the engine structurally alive |
+| **Inversion** | Creates chaotic spacing and deep taps during instability |
+| **Repair** | Controlled descent to rebalance geometry after ceiling migration |
+| **Anchor** | Establishes meaningful highs/lows that define geometry |
+| **Migration** | Shifts ceiling or floor boundaries to new structural zones |
 
-What each actor does
+---
 
-Where each actor operates (lane scope)
+## Actor Registry — Column Definitions
 
-Required spacing
+| Column | Purpose |
+|--------|---------|
+| **Actor Type** | Burst, Cascade, Drift, Vacuum, etc. |
+| **Purpose** | Compact definition of the actor’s role |
+| **Lane Scope** | Which lanes the actor operates in |
+| **Spacing** | Typical spacing range (+ / – / neutral) |
+| **Conditions** | Requirements for actor activation |
+| **Families** | Movement families the actor participates in |
 
-Conditions for activation
+---
 
-Which movement families each actor belongs to
+## Actor Registry — Full Table
 
+### Burst
+- **Lane Scope:** B‑C‑D‑Ceiling  
+- **Spacing:** +5–10  
+- **Conditions:** Needs intact geometry, mid‑book thickness  
+- **Families:** Expansion, Cascade, Ceiling‑Test  
 
-🔹 Actor Registry Table
-This is the full structured registry — the strongest part of Layer 4.3.
+---
 
-| **Actor Type** | **Purpose** | **Lane Scope** | **Spacing** | **Conditions** | **Families** |
-| --- | --- | --- | --- | --- | --- |
-| **Burst** | Sudden expansion bursts | B‑C‑D‑Ceiling | +5–10 | Needs intact geometry, mid‑book thickness | Expansion, Cascade, Ceiling‑Test |
-| **Cascade** | Multi‑lane inheritance | C‑D‑Ceiling | +10–20 | Needs intact geometry, actor presence | Cascade, Expansion, Ceiling‑Test |
-| **Drift** | Maintains drift floors | Drift‑A | 1–3 | Needs stable drift corridor | Drift, Expansion |
-| **Vacuum** | Hollow‑book displacement | C→A / B→D | +15–40 | Needs hollow zones, missing shelves | Inversion, Purge |
-| **Ceiling‑Test** | Tests ceiling boundary | D‑Ceiling | +5–12 | Needs intact ceiling geometry | Ceiling‑Test, Expansion, Migration |
-| **Compression** | Tightens lane spacing | A‑B | 1–4 | Needs stable lower geometry | Drift, Expansion |
-| **Purge** | Clears stacked highs/lows | A‑Drift / C‑D | −10–25 | Needs congestion, stale geometry | Purge, Decay‑Repair |
-| **Weaver** | Maintains corridor spacing | A‑B‑C (D optional) | 5‑spacing | Needs intact corridor structure | Weaver, Drift, Expansion |
-| **Inversion** | Chaotic spacing | A‑Drift / C‑D | +10 to −20 | Needs broken geometry, hollow zones | Inversion, Purge |
-| **Repair** | Controlled descent | B‑A‑Drift | −5–12 | Needs unstable geometry, actor presence | Decay‑Repair, Ceiling‑Test |
-| **Anchor** | Defines meaningful highs/lows | A‑Drift‑C / D‑Ceiling | Stable | Needs stable geometry, repeated taps | Drift, Expansion, Cascade |
-| **Migration** | Moves ceiling/floor | Ceiling‑D / Drift‑A | +8–15 | Needs boundary instability | Migration, Ceiling‑Test |
+### Cascade
+- **Lane Scope:** C‑D‑Ceiling  
+- **Spacing:** +10–20  
+- **Conditions:** Needs intact geometry, actor presence  
+- **Families:** Cascade, Expansion, Ceiling‑Test  
 
+---
 
-Schema Connections
-Upstream:
+### Drift
+- **Lane Scope:** Drift‑A  
+- **Spacing:** 1–3  
+- **Conditions:** Needs stable drift corridor  
+- **Families:** Drift, Expansion  
 
-Layer 4 — Engine Map
+---
 
-Layer 4.2 — Movement‑Family Behavior
+### Vacuum
+- **Lane Scope:** C→A / B→D  
+- **Spacing:** +15–40  
+- **Conditions:** Needs hollow zones, missing shelves  
+- **Families:** Inversion, Purge  
 
-Downstream:
+---
 
-Layer 5 — Memory Taps
+### Ceiling‑Test
+- **Lane Scope:** D‑Ceiling  
+- **Spacing:** +5–12  
+- **Conditions:** Needs intact ceiling geometry  
+- **Families:** Ceiling‑Test, Expansion, Migration  
 
-Layer 6 — Spike System
+---
 
-Layer 6.6 — Synthetic Spikes
+### Compression
+- **Lane Scope:** A‑B  
+- **Spacing:** 1–4  
+- **Conditions:** Needs stable lower geometry  
+- **Families:** Drift, Expansion  
 
-Layer 6.7 — Synthetic Shared Timing
+---
 
-Layer 7.2 — Patterns
+### Purge
+- **Lane Scope:** A‑Drift / C‑D  
+- **Spacing:** −10–25  
+- **Conditions:** Needs congestion, stale geometry  
+- **Families:** Purge, Decay‑Repair  
 
-Layer 4.3 is the actor‑logic layer that powers all deeper structural analysis.
+---
 
-Navigation
-Jump to related layers:
+### Weaver
+- **Lane Scope:** A‑B‑C (D optional)  
+- **Spacing:** 5‑spacing  
+- **Conditions:** Needs intact corridor structure  
+- **Families:** Weaver, Drift, Expansion  
 
-Layer 4 — Engine Map
+---
 
-Layer 4.2 — Movement‑Family Behavior
+### Inversion
+- **Lane Scope:** A‑Drift / C‑D  
+- **Spacing:** +10 to −20  
+- **Conditions:** Needs broken geometry, hollow zones  
+- **Families:** Inversion, Purge  
 
-Layer 5 — Memory Taps
+---
 
-Layer 6 — Spike System
+### Repair
+- **Lane Scope:** B‑A‑Drift  
+- **Spacing:** −5–12  
+- **Conditions:** Needs unstable geometry, actor presence  
+- **Families:** Decay‑Repair, Ceiling‑Test  
 
-Layer 7.2 — Patterns
+---
+
+### Anchor
+- **Lane Scope:** A‑Drift‑C / D‑Ceiling  
+- **Spacing:** Stable  
+- **Conditions:** Needs stable geometry, repeated taps  
+- **Families:** Drift, Expansion, Cascade  
+
+---
+
+### Migration
+- **Lane Scope:** Ceiling‑D / Drift‑A  
+- **Spacing:** +8–15  
+- **Conditions:** Needs boundary instability  
+- **Families:** Migration, Ceiling‑Test  
+
+---
+
+## Notes
+
+Layer 4.3 is used by:
+
+- Layer 4.2 (Movement Families)  
+- Layer 5 (Memory Taps)  
+- Layer 6 (Spike Systems)  
+- Layer 7 (Patterns)  
+- Case Studies  
+
+Actors are the structural forces that shape engine behavior.
+

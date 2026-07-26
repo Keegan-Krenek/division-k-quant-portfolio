@@ -1,37 +1,85 @@
-Layer 6 is the core spike‑system layer.
-It tracks every meaningful spike event across all markets and ties it directly to:
+# Layer 6 — Price Spikes & Candle Tracking
 
-🔹 Usage
+Layer 6 captures all spike‑related engine behavior across multiple timeframes.  
+It includes natural spikes, synthetic spikes, liquidation events, candle‑tracking layers, shared timing windows, and flat‑spike markets.
+
+This layer is the structural “event engine” of the Master Schema — where spikes, dumps, cascades, timing sync, and liquidation cycles are recorded and analyzed.
+
+---
+
+## Purpose of This Layer
+
 Use Layer 6 to:
 
-Identify synthetic vs natural spikes
+- track natural and synthetic price spikes  
+- record candle behavior across multiple timeframes  
+- analyze liquidation cascades and cluster density  
+- identify synthetic spike patterns and actor‑driven behavior  
+- detect shared timing windows across markets  
+- classify flat‑spike markets and cascade bursts  
 
-Track memory band interactions
+Layer 6 provides the event‑level structural data that drives spike analysis, timing prediction, and engine‑cycle modeling.
 
-Understand actor involvement during spikes
+---
 
-Diagnose engine stability
+## What This Layer Contains
 
-Predict post‑spike behavior
+- **Layer 6 — Price Spikes**  
+- **Layer 6.1–6.4 — Candle Trackers (1M, 5M, 15M, 1H)**  
+- **Layer 6.5 — Liquidation Events**  
+- **Layer 6.6 — Synthetic Spike Behavior**  
+- **Layer 6.7 — Synthetic Shared Timing**  
+- **Layer 6.8 — Flat Spike Markets**  
+- **Layer 6.9 — Flat Spike Meta‑Tracker (if present)**  
 
-Build case studies for synthetic control
+Each sub‑layer represents a different structural event type.
 
-Map dump → recovery signatures
+---
 
-Feed candle‑level spike trackers (6.1–6.4)
+## Connections to Other Layers
 
-| **Column** | **Purpose** |
-| --- | --- |
-| **Market** | Which engine the spike occurred in |
-| **Date** | When the spike happened |
-| **Time** | Exact timestamp |
-| **Spike Size** | Magnitude of the spike |
-| **Spike Type** | Natural / Synthetic / Actor‑Forced / Vacuum |
-| **Memory Interaction** | Whether the spike interacted with a memory band |
-| **Structure Before** | Engine state before the spike |
-| **Structure After** | Engine state after the spike |
-| **Actor Behavior** | Actor involvement |
-| **Book Behavior** | Thick / thin / hollow |
-| **Dump Candle Signature** | Shape & speed of dumps |
-| **Recovery Signature** | V‑shape / slow / synthetic |
-| **Notes** | Freeform structural notes |
+### Master Schema  
+Layer 6 corresponds to **Spike Systems** in the 20‑Layer Master Schema.
+
+### Proto‑Database  
+Maps to SQL tables:  
+- `price_spikes`  
+- `candle_trackers`  
+- `liquidation_events`  
+- `synthetic_spikes`  
+- `synthetic_shared_timing`  
+- `flat_spike_markets`  
+
+### Image Library  
+References visuals from:  
+- Spike‑Patterns  
+- Candle‑Sequences  
+- Liquidation‑Events  
+- Shared‑Market‑Timing  
+
+---
+
+## Why Layer 6 Matters
+
+Layer 6 enables:
+
+- spike‑cycle prediction  
+- actor‑driven spike analysis  
+- liquidation‑cascade modeling  
+- synthetic‑engine detection  
+- timing‑sync forecasting  
+- multi‑market spike comparison  
+
+It is one of the most data‑dense and structurally important layers in the entire system.
+
+---
+
+## Future Expansion
+
+Planned improvements include:
+
+- automated spike detection  
+- liquidation‑cycle modeling  
+- shared‑timing dashboards  
+- spike‑pattern clustering  
+- actor‑driven spike forecasting  

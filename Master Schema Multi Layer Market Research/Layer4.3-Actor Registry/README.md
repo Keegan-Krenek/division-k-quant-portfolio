@@ -1,35 +1,78 @@
-Layer 4.3 — Actor Registry
-Actor Identification, Behavioral Signatures, Book Interaction & Structural Influence
+# Layer 4.3 — Actor Registry
 
-Usage
+Layer 4.3 defines the structural actors that influence engine behavior.  
+Actors are not buyers or sellers — they are **behavioral forces** that shape spacing, bursts, cascades, drift floors, ceiling tests, purges, and geometry stability.
+
+This layer catalogs every actor type, their purpose, lane scope, spacing rules, conditions, and movement‑family alignment.
+
+---
+
+## Purpose of This Layer
+
 Use Layer 4.3 to:
 
-Identify which actors are active during a movement
+- classify actor types and their structural roles  
+- understand lane scope and spacing geometry  
+- identify actor‑driven bursts, cascades, purges, and repairs  
+- track how actors influence movement families (Layer 4.2)  
+- interpret actor pressure during spikes, timing windows, and memory taps  
 
-Understand lane scope and spacing requirements
+Actors define **how the engine behaves under pressure**.
 
-Predict transitions between movement families
+---
 
-Diagnose geometry instability (inversion, purge, vacuum)
+## What This Layer Contains
 
-Map actor involvement during spikes, memory taps, and cascades
+- actor types  
+- actor purpose  
+- lane scope  
+- spacing ranges  
+- spacing direction (expansion / collapse / compression)  
+- structural conditions  
+- movement‑family alignment  
 
-Build case studies for synthetic vs natural actor behavior
+Each actor type represents a distinct structural behavior inside the engine.
 
+---
 
-🔹 Actor Types (High‑Level Definitions)
+## Connections to Other Layers
 
-| **Actor Type** | **Purpose** |
-| --- | --- |
-| **Burst** | Sudden expansion bursts |
-| **Cascade** | Drives high‑velocity multi‑lane cascades |
-| **Drift** | Maintains drift corridors and forms drift floors |
-| **Vacuum** | Creates hollow‑book displacement spikes |
-| **Ceiling‑Test** | Tests top boundary for rejection or migration |
-| **Compression** | Tightens spacing for drift → expansion transitions |
-| **Purge** | Clears stacked lows/highs to reset geometry |
-| **Weaver** | Maintains corridor spacing and structural continuity |
-| **Inversion** | Creates chaotic spacing during geometry instability |
-| **Repair** | Controlled descent after ceiling migration |
-| **Anchor** | Establishes meaningful highs/lows for geometry |
-| **Migration** | Shifts ceiling or floor boundaries |
+### Master Schema  
+Layer 4.3 corresponds to **Actor Registry** in the 20‑Layer Master Schema.
+
+### Proto‑Database  
+Maps to the SQL table:  
+- `actor_registry`
+
+### Image Library  
+References visuals from:  
+- Actor‑Fingerprints  
+- Movement‑Families  
+- Spike‑Patterns  
+- Engine‑Maps  
+
+---
+
+## Why Layer 4.3 Matters
+
+Actor registry enables:
+
+- actor‑pressure interpretation  
+- cascade‑lane prediction  
+- drift‑floor formation analysis  
+- ceiling‑test behavior modeling  
+- purge‑event detection  
+- structural sequencing alignment  
+
+Actors are the “hands” that move the engine.
+
+---
+
+## Future Expansion
+
+Planned improvements include:
+
+- additional actor types (steppers, shapers, sweepers, absorbers, cliff‑makers, pressure‑dumpers)  
+- actor‑pressure scoring  
+- actor‑lane clustering  
+- actor‑driven spike forecasting  

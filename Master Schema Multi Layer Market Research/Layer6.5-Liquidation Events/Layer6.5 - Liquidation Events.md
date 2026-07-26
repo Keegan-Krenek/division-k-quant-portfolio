@@ -1,135 +1,131 @@
-Layer 6.5 — Liquidation Events
-Forced Exits, Cascade Behavior, Synthetic Liquidation Triggers & Structural Impact
+# Layer 6.5 — Liquidation Events (Full Data)
 
-🔹 Purpose
-Layer 6.5 tracks liquidation events — the most important forced‑move structures inside any engine.
+This file contains the complete liquidation‑event dataset for all markets.  
+It includes all columns, definitions, examples, and raw entries.
 
-A liquidation event is not “just a big red candle.”
-It is a macro structural failure triggered by:
+---
 
-actor pressure
+## Column Definitions
 
-book hollowness
+| Column | Purpose |
+|--------|---------|
+| **Market** | Which engine produced the liquidation |
+| **Date** | Event date |
+| **Time (PDT)** | Event timestamp |
+| **Long/Short Liquidation** | Side liquidated |
+| **Liquidation Size** | Notional size |
+| **Cluster Density** | Low / Medium / High |
+| **Liquidation Type** | U‑Shape / V‑Shape / Staircase / Pinnacle Chain |
+| **Cascade Depth** | Number of sequential liquidations |
+| **Engine Reaction** | Stall / Accelerate / Reverse / Ignore |
+| **Actor Reaction** | Pressure / Exit / Enter / Absent |
+| **Book Reaction** | Thin / Hollow / Absorption / Vacuum |
+| **Spike Interaction** | Yes/No + size if relevant |
+| **Synthetic Interaction** | Yes/No + pattern |
+| **Recovery Time** | Seconds/minutes to normalize |
+| **Follow‑Through Strength** | Weak / Medium / Strong |
+| **Pre‑Event Structure** | Coil / Drift / Hollow / Thick |
+| **Post‑Event Structure** | Same categories |
+| **Notes** | Freeform notes |
 
-synthetic timing
+---
 
-memory‑band violation
+## Column Layout
 
-cascade inheritance
+Market | Date | Time | Long/Short | Liquidation Size | Cluster Density | Macro Cycle Event Count (30M) | Notes | Cascade Depth (1M) | Type | Engine Reaction | Actor Reaction | Book Reaction | Spike Interaction | Synthetic Interaction | Recovery Time | Follow‑Through Strength | Pre‑Event Structure | Post‑Event Structure
 
-vacuum displacement
+---
 
-This layer captures:
+# Liquidation Event Entries (Your Raw Data)
 
-Long/short liquidation bias
+### JTO — June 14–17  
+- **Time Range:** 14:30 → 10:30  
+- **Long/Short:** Macro Large  
+- **Liquidation Size:** 3‑day size  
+- **Cluster Density:** Macro High  
+- **Macro Cycle Count:** 13  
+- **Notes:** —  
 
-Notional size
+---
 
-Cluster density
+### JTO — June 17–18  
+- **Time Range:** 13:00 → 11:00  
+- **Long/Short:** Macro Small/Mid  
+- **Liquidation Size:** 2‑day size  
+- **Cluster Density:** Macro Small  
+- **Macro Cycle Count:** 7  
+- **Notes:** Fragmented macro cycle  
 
-Event count
+---
 
-Cascade depth
+### JTO — June 18–20  
+- **Time Range:** 11:00 → 05:30  
+- **Long/Short:** Macro Mid/Large  
+- **Liquidation Size:** 3‑day size  
+- **Cluster Density:** Macro Medium  
+- **Macro Cycle Count:** 13  
+- **Notes:** Pre‑cycle structural positioning  
 
-Engine reaction
+---
 
-Actor reaction
+### JTO — June 20–21  
+- **Time Range:** 08:00 → 14:00  
+- **Long/Short:** Macro Small/Mid  
+- **Liquidation Size:** 2‑day size  
+- **Cluster Density:** Macro Mid/Small  
+- **Macro Cycle Count:** 7  
+- **Notes:** —  
 
-Book reaction
+---
 
-Spike interaction
+### JTO — June 21  
+- **Time Range:** 15:30 → 21:00  
+- **Long/Short:** Macro Tiny  
+- **Liquidation Size:** 6‑hour size  
+- **Cluster Density:** Macro Tiny  
+- **Macro Cycle Count:** 2  
+- **Notes:** —  
 
-Recovery time
+---
 
+### JTO — June 21–23  
+- **Time Range:** 22:00 → 00:30  
+- **Long/Short:** Macro Small/Mid  
+- **Liquidation Size:** 3‑day size  
+- **Cluster Density:** Macro Medium  
+- **Macro Cycle Count:** 7  
+- **Notes:** —  
 
+---
 
-Example Liquidation Event Records
+### JTO — June 23  
+- **Time Range:** 01:30 → 04:30  
+- **Long/Short:** Macro Tiny  
+- **Liquidation Size:** 3‑hour size  
+- **Cluster Density:** Macro Tiny  
+- **Macro Cycle Count:** 2  
+- **Notes:** —  
 
+---
 
-JTO — Synthetic Long Liquidation Cascade
+### JTO — June 23–25  
+- **Time Range:** 05:30 → 13:00  
+- **Long/Short:** Macro Large  
+- **Liquidation Size:** 2‑day ongoing  
+- **Cluster Density:** Macro Large  
+- **Macro Cycle Count:** 12  
+- **Notes:** Skipped handoff → jumped up  
 
-| Field | Value |
-| --- | --- |
-| Market | JTO |
-| Long/Short Liquidation | Long |
-| Liquidation Size | Medium |
-| Cluster Density | High |
-| Event Count | 4 |
-| Cascade Depth | Deep (3‑lane inheritance) |
-| Engine Reaction | Synthetic dump → synthetic V |
-| Actor Reaction | High actor presence |
-| Book Reaction | Hollow → thin → thick |
-| Spike Interaction | Synthetic burst → synthetic ladder |
-| Recovery Time | Fast (synthetic V) |
-| Follow‑Through Strength | Strong |
-| Notes | Forced long liquidation triggered by synthetic timing cluster |
+---
 
+## Notes
 
-STG — Synthetic Short Liquidation Chain
+Layer 6.5 liquidation events are used by:
 
-| Field | Value |
-| --- | --- |
-| Market | STG |
-| Long/Short Liquidation | Short |
-| Liquidation Size | Large |
-| Cluster Density | Medium |
-| Event Count | 3 |
-| Cascade Depth | Medium |
-| Engine Reaction | Synthetic dump → coil reset |
-| Actor Reaction | Medium |
-| Book Reaction | Thin |
-| Spike Interaction | Synthetic flick |
-| Recovery Time | Medium |
-| Follow‑Through Strength | Medium |
-| Notes | Synthetic short liquidation triggered by actor cluster imbalance |
+- Layer 6.6 (Synthetic Spikes)  
+- Layer 6.7 (Shared Timing)  
+- Layer 7 (Patterns)  
+- Case Studies  
 
-XPL — Natural Long Liquidation
+Liquidation events reveal how engines behave under extreme pressure and often define major structural cycle transitions.
 
-| Field | Value |
-| --- | --- |
-| Market | XPL |
-| Long/Short Liquidation | Long |
-| Liquidation Size | Small |
-| Cluster Density | Low |
-| Event Count | 1 |
-| Cascade Depth | Shallow |
-| Engine Reaction | Natural dump → slow recovery |
-| Actor Reaction | Low |
-| Book Reaction | Medium |
-| Spike Interaction | Natural spike |
-| Recovery Time | Slow |
-| Follow‑Through Strength | Weak |
-| Notes | Natural liquidation; no synthetic involvement |
-
-🔹 Schema Connections
-Upstream:
-
-Layer 6 — Price Spikes
-
-Layer 6.1–6.4 — Candle Spike Trackers
-
-Layer 4.3 — Actor Registry
-
-Downstream:
-
-Layer 7.2 — Patterns
-
-Layer 4.2 — Movement‑Family Behavior
-
-Layer 6.5 is the forced‑move logic layer that powers macro‑cycle analysis and pattern formation.
-
-
-🔹 Navigation
-Jump to related layers:
-
-Layer 6 — Price Spikes
-
-Layer 6.1–6.4 — Candle Spike Trackers
-
-Layer 6.6 — Synthetic Spikes
-
-Layer 6.7 — Synthetic Shared Timing
-
-Layer 4.2 — Movement‑Family Behavior
-
-Layer 7.2 — Patterns

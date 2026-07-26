@@ -1,121 +1,74 @@
-Layer 7.1 — Synthetic Market Tracker
-Cross‑Market Synthetic Engine Mapping, Activity Levels, Coordination Signals & Macro Synthetic Health
+# Layer 7.1 — Synthetic Market Tracker (Full Data)
 
+This file contains the complete synthetic‑market dataset.  
+All entries below come directly from the updated Layer 7.1 tracker.
 
-🔹 Purpose
-Layer 7.1 is your synthetic market dashboard — the layer that tracks synthetic activity across all markets and identifies:
+---
 
-which engines are synthetic
+## Column Definitions
 
-which engines are natural
+| Column | Purpose |
+|--------|---------|
+| **Market** | Market name |
+| **Date** | Synthetic event date |
+| **Time** | Synthetic event time |
+| **Start Price** | Price before synthetic ignition |
+| **Peak Price** | Highest price reached |
+| **Movement Type** | Synthetic burst classification |
+| **Total Run Length** | Duration of synthetic cycle |
+| **Notes** | Synthetic‑behavior notes |
+| **Recurring Daily** | Whether synthetic behavior repeats daily |
+| **Extra Notes** | Additional structural behavior |
 
-which engines are hybrid
+---
 
-synthetic activity level (low → extreme)
+## Column Layout
 
-synthetic timing clusters
+Market | Date | Time | Start Price | Peak Price | Movement Type | Total Run Length | Notes | Recurring Daily | Extra Notes
 
-synthetic coordination across markets
+---
 
-synthetic suppression windows
+# Synthetic Market Entries  
+*(All entries below are taken directly from your uploaded file.)*
 
-synthetic ignition cycles
+### OMNI‑USD — 7/21/2026 1:00 PM  
+- **Start Price:** 0.445  
+- **Peak Price:** 0.54  
+- **Movement Type:** Single Burst  
+- **Total Run Length:** 1 hour  
+- **Notes:** “Spike engine runs these spikes ever”  
+- **Recurring Daily:** Yes  
 
-synthetic dump → synthetic V sequences
+---
 
-synthetic memory reinforcement
+### CHECK‑USD — 7/20/2026 2:00 PM  
+- **Start Price:** 0.02545  
+- **Peak Price:** 0.333  
+- **Movement Type:** 3–5 Burst Until Destination  
+- **Notes:** “Using stepping‑algo bot managed very tightly”  
+- **Extra Notes:** “Creates burst movement ladders in macro scale; micro downward movement sharp due to hollow bid placeholders”  
 
-synthetic ladder behavior
+---
 
-synthetic burst frequency
+### GFI‑USD — 7/23/2026 12:45 PM  
+- **Start Price:** 0.0365  
+- **Peak Price:** 0.0574  
+- **Movement Type:** Small Climb → Large Burst  
+- **Total Run Length:** 3 hours ongoing  
+- **Notes:** “200–300 point spikes throughout the month”  
+- **Recurring Daily:** Yes and No  
+- **Extra Notes:** “Recurring almost every day with cooldown days where large drops are witnessed”  
 
+---
 
-Example Synthetic Market Records
+# Notes
 
-JTO — High Synthetic Activity
+Layer 7.1 synthetic markets are used by:
 
-| Field | Value |
-| --- | --- |
-| Market | JTO |
-| Engine Type | Synthetic |
-| Synthetic Activity Level | High |
-| Synthetic Spike Count | 14 |
-| Synthetic Burst Count | 6 |
-| Synthetic Ladder Count | 4 |
-| Synthetic Flick Count | 3 |
-| Synthetic Dump → V Count | 2 |
-| Synthetic Memory Reinforcement | Yes |
-| Shared Timing Participation | Yes |
-| Suppression Windows | No |
-| Notes | Strong synthetic engine; participates in cross‑market timing clusters |
+- Layer 7.2 (Patterns)  
+- Layer 8 (Engine Evolution)  
+- Case Studies  
+- Synthetic‑Engine Analysis  
 
+Synthetic markets reveal mechanical burst families and actor‑driven ignition logic.
 
-ALLO — Extreme Synthetic Activity
-
-| Field | Value |
-| --- | --- |
-| Market | ALLO |
-| Engine Type | Synthetic |
-| Synthetic Activity Level | Extreme |
-| Synthetic Spike Count | 22 |
-| Synthetic Burst Count | 10 |
-| Synthetic Ladder Count | 6 |
-| Synthetic Flick Count | 4 |
-| Synthetic Dump → V Count | 3 |
-| Synthetic Memory Reinforcement | Yes |
-| Shared Timing Participation | Yes |
-| Suppression Windows | No |
-| Notes | ALLO shows extreme synthetic bursts; major synthetic engine |
-
-SYND — Medium Synthetic Activity
-
-| Field | Value |
-| --- | --- |
-| Market | SYND |
-| Engine Type | Hybrid |
-| Synthetic Activity Level | Medium |
-| Synthetic Spike Count | 8 |
-| Synthetic Burst Count | 3 |
-| Synthetic Ladder Count | 2 |
-| Synthetic Flick Count | 3 |
-| Synthetic Dump → V Count | 1 |
-| Synthetic Memory Reinforcement | Yes |
-| Shared Timing Participation | Yes |
-| Suppression Windows | Yes |
-| Notes | Hybrid engine; synthetic suppression windows present |
-
-XPL — Natural Engine
-
-| Field | Value |
-| --- | --- |
-| Market | XPL |
-| Engine Type | Natural |
-| Synthetic Activity Level | Low |
-| Synthetic Spike Count | 1 |
-| Synthetic Burst Count | 0 |
-| Synthetic Ladder Count | 0 |
-| Synthetic Flick Count | 1 |
-| Synthetic Dump → V Count | 0 |
-| Synthetic Memory Reinforcement | No |
-| Shared Timing Participation | No |
-| Suppression Windows | No |
-| Notes | Natural engine; minimal synthetic behavior |
-
-🔹 Schema Connections
-Upstream:
-
-Layer 6.6 — Synthetic Spikes
-
-Layer 6.7 — Synthetic Shared Timing
-
-Layer 6.8 — Flat Spike Markets
-
-Layer 4.3 — Actor Registry
-
-Downstream:
-
-Layer 7.2 — Patterns
-
-Layer 8 — Synthetic Engine Evolution (if you build it later)
-
-Layer 7.1 is the macro synthetic dashboard that powers pattern recognition and engine evolution analysis.

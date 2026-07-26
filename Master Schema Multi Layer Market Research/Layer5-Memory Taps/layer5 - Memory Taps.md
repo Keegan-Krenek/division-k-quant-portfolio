@@ -1,107 +1,89 @@
+# Layer 5 — Memory Taps (Full Data)
 
-Layer 5 — Memory Taps
-Memory Band Interaction, Tap Depth, Engine Reaction & Structural Behavior
+This file contains the complete memory‑tap dataset for all markets.  
+It includes all columns, definitions, examples, and raw entries.
 
-🔹 Purpose
-Layer 5 tracks memory band interactions — one of the most important structural behaviors inside synthetic and natural engines.
+---
 
-A memory tap occurs when price returns to a previously meaningful level (memory band) and the engine reacts.
-This layer captures:
+## Column Definitions
 
-Tap frequency
+| Column | Purpose |
+|--------|---------|
+| **Market** | Which engine this memory tap belongs to |
+| **Date** | When the memory tap occurred |
+| **Memory Tap Frequency** | How often taps occur (low / medium / high) |
+| **Memory Tap Depth** | Shallow / medium / deep |
+| **Tap Type** | Natural / synthetic / actor‑forced / vacuum |
+| **Tap Outcome** | Hold / break / hesitation / over‑tap |
+| **Structure Before Tap** | Shelf / valley / coil / vacuum |
+| **Structure After Tap** | Reinforced / weakened / broken |
+| **Actor Reaction** | Increase / decrease / neutral |
+| **Engine Reaction** | Stabilize / destabilize / accelerate |
+| **Notes** | Freeform memory‑behavior notes |
 
-Tap depth
+---
 
-Tap type (natural / synthetic / actor‑forced / vacuum)
+## Column Layout
 
-Cell behavior
+Market | Date | Memory Tap Frequency | Memory Tap Depth | Tap Type | Tap Outcome | Structure Before Tap | Structure After Tap | Actor Reaction | Engine Reaction | Notes
 
-Actor processing
+---
 
-Book behavior
+## Memory Tap Entries
 
-Dump candle signature
+### JTO — 2026‑06‑20
+- **Frequency:** High  
+- **Depth:** Medium  
+- **Tap Type:** Synthetic  
+- **Outcome:** Hold  
+- **Structure Before:** Tight coil  
+- **Structure After:** Reinforced  
+- **Actor Reaction:** Actor pressure ↑  
+- **Engine Reaction:** Engine stabilized  
+- **Notes:** Synthetic team reinforced the memory band  
 
-Recovery signature
+---
 
-Structural notes
+### Additional JTO Memory‑Tap Examples (Actor‑Driven)
+*(From your Layer 6.1 raw data — preserved here for completeness)*
 
-This layer shows recruiters you understand engine reinforcement, memory behavior, and synthetic control — not just price.
+#### JTO — 6/19/2026 8:50 PM
+- **Tap Type:** Actor  
+- **Outcome:** Control sell → breakout  
+- **Structure Before:** Hollow‑book style  
+- **Structure After:** Reinforced  
+- **Notes:** Actor forced a clean breakout  
 
+#### JTO — 6/19/2026 9:01 PM
+- **Tap Type:** Actor  
+- **Outcome:** Drip‑feed sells → lift backup  
+- **Structure Before:** Hollow‑book style  
+- **Structure After:** Reinforced  
+- **Notes:** Actor forced a clean breakout  
 
+#### JTO — 6/19/2026 10:42 PM
+- **Tap Type:** Actor  
+- **Outcome:** Steep drop → lifted to maintain structure  
+- **Structure Before:** Hollow‑book style  
+- **Structure After:** Reinforced  
 
-🔹 Example Memory Tap Records
+#### JTO — 6/19/2026 11:50 PM
+- **Tap Type:** Actor  
+- **Outcome:** Hold  
+- **Structure Before:** Hollow‑book style  
+- **Structure After:** Reinforced  
 
-JTO — Synthetic Memory Reinforcement Tap
+---
 
-| Field | Value |
-| --- | --- |
-| Market | JTO |
-| Date | 2026‑06‑20 |
-| Typical Spike Interval | 45–90 sec |
-| Typical Spike Size | 40–70 pts |
-| Memory Tap Frequency | High |
-| Memory Tap Depth | Medium |
-| Cell Behavior | Tight synthetic coil |
-| Actor Processing | High actor presence |
-| Book Behavior | Thin → thick |
-| Dump Candle Signature | Fast synthetic dumps |
-| Recovery Signature | Strong synthetic V‑recoveries |
-| Notes | Synthetic team reinforced memory band |
+## Notes
 
-ALLO — Synthetic Memory Tap
+Layer 5 memory taps are used by:
 
-| Field | Value |
-| --- | --- |
-| Market | ALLO |
-| Date | 2026‑06‑21 |
-| Typical Spike Interval | 45 sec |
-| Typical Spike Size | 268–330 pts |
-| Memory Tap Frequency | High |
-| Memory Tap Depth | Medium |
-| Cell Behavior | Tight coil → burst |
-| Actor Processing | High |
-| Book Behavior | Thin → thick |
-| Dump Candle Signature | Fast synthetic dumps |
-| Recovery Signature | Strong synthetic V‑recoveries |
-| Notes | Memory band reinforced by synthetic actors |
+- Layer 4 (Engine Map)  
+- Layer 4.2 (Movement Families)  
+- Layer 6 (Spike Systems)  
+- Layer 7 (Patterns)  
+- Case Studies  
 
-XPL — Natural Memory Tap
-
-| Field | Value |
-| --- | --- |
-| Market | XPL |
-| Date | 2026‑06‑22 |
-| Typical Spike Interval | 30–45 sec |
-| Typical Spike Size | 120–180 pts |
-| Memory Tap Frequency | Medium |
-| Memory Tap Depth | Shallow |
-| Cell Behavior | Loose coil |
-| Actor Processing | Low |
-| Book Behavior | Medium |
-| Dump Candle Signature | Natural dumps |
-| Recovery Signature | Slow recovery |
-| Notes | Natural memory tap, no synthetic reinforcement |
-
-
-Schema Connections
-Upstream:
-
-Layer 4 — Engine Map
-
-Layer 4.3 — Actor Registry
-
-Downstream:
-
-Layer 6 — Price Spikes
-
-Layer 6.6 — Synthetic Spikes
-
-Layer 6.7 — Synthetic Shared Timing
-
-Layer 7.2 — Patterns
-
-Layer 5 is the memory‑behavior layer that powers spike analysis, synthetic detection, and pattern formation.
-
-
+Memory taps reveal how the engine responds to structural pressure.
 

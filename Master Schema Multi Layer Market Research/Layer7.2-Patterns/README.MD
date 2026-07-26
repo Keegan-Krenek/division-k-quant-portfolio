@@ -1,89 +1,85 @@
-Layer 7.2 — Patterns
-Synthetic & Natural Pattern Recognition, Engine Signatures, Structural Cycles & Multi‑Layer Pattern Mapping
+# Layer 7.2 — Patterns
 
+Layer 7.2 catalogs structural patterns across all markets.  
+Patterns are recurring structural behaviors that appear across engines, timeframes, synthetic cycles, burst families, and timing windows.  
+They reveal how markets behave under pressure, how synthetic engines coordinate, and how actors shape geometry.
 
-🔹 Usage
+This layer is the foundation for pattern recognition, engine evolution, and forecasting.
+
+---
+
+## Purpose of This Layer
+
 Use Layer 7.2 to:
 
-Identify synthetic, natural, and hybrid patterns
+- identify recurring structural patterns  
+- classify pattern families (burst, drift, ladder, cascade, synthetic, timing)  
+- detect multi‑market pattern sync  
+- track pattern frequency and lifespan  
+- analyze actor‑driven pattern formation  
+- correlate patterns with spikes, liquidations, and synthetic cycles  
+- support engine‑evolution and forecasting  
 
-Track multi‑hour and multi‑day pattern cycles
+Patterns reveal **engine identity**, **synthetic coordination**, and **structural predictability**.
 
-Diagnose actor‑driven patterns
+---
 
-Map synthetic dump → V → ladder sequences
+## What This Layer Contains
 
-Detect synthetic ignition cycles
+- pattern name  
+- pattern family  
+- pattern description  
+- pattern lifespan  
+- pattern frequency  
+- markets where pattern appears  
+- actor involvement  
+- synthetic involvement  
+- timing‑window alignment  
+- structural notes  
 
-Build macro pattern case studies
+Each entry represents a complete pattern profile.
 
-Feed synthetic engine evolution models
+---
 
-Build pattern‑based trading logic
+## Connections to Other Layers
 
-🔹 Pattern Types
+### Master Schema  
+Layer 7.2 corresponds to **Patterns** in the 20‑Layer Master Schema.
 
-| Pattern | Definition |
-| --- | --- |
-| **Burst → Coil → Burst** | Synthetic burst followed by coil reset and another burst |
-| **Dump → V → Ladder** | Synthetic dump → synthetic V → ladder climb |
-| **Synthetic Flick Loop** | Repeated flicks in tight timing windows |
-| **Synthetic Memory Reinforcement Cycle** | Synthetic taps reinforcing memory bands |
-| **Synthetic Ignition Cycle** | Multi‑hour synthetic ignition sequence |
-| **Synthetic Ceiling Migration** | Synthetic movement of ceiling boundary |
+### Proto‑Database  
+Maps to the SQL table:  
+- `patterns`
 
+### Image Library  
+References visuals from:  
+- Pattern‑Families  
+- Synthetic‑Spikes  
+- Burst‑Patterns  
+- Shared‑Timing  
+- Engine‑Evolution  
 
-Natural Patterns
+---
 
-| Pattern | Definition |
-| --- | --- |
-| **Natural Drift Corridor** | Slow, organic drift with low actor presence |
-| **Natural Spike → Slow Recovery** | Natural spike followed by slow recovery |
-| **Natural Compression → Expansion** | Natural compression leading to organic expansion |
-| **Natural Coil → Natural Burst** | Natural coil followed by natural burst |
+## Why Layer 7.2 Matters
 
+Patterns enable:
 
-Hybrid Patterns
+- engine‑identity classification  
+- synthetic‑engine detection  
+- burst‑family recognition  
+- timing‑cycle forecasting  
+- multi‑market pattern sync analysis  
+- structural prediction modeling  
 
-| Pattern | Definition |
-| --- | --- |
-| **Synthetic Burst → Natural Drift** | Synthetic burst followed by natural drift |
-| **Natural Spike → Synthetic V** | Natural spike followed by synthetic recovery |
-| **Synthetic Ladder → Natural Compression** | Synthetic ladder followed by natural compression |
-| **Natural Drift → Synthetic Ignition** | Natural drift corridor leading into synthetic ignition |
+This layer is essential for understanding how engines behave over time.
 
+---
 
-| **Column** | **Purpose** |
-| --- | --- |
-| **Market** | Which market the pattern occurred in |
-| **Pattern Type** | Synthetic / Natural / Hybrid |
-| **Pattern Name** | Name of the pattern |
-| **Start Time (PDT)** | When the pattern began |
-| **End Time (PDT)** | When the pattern ended |
-| **Duration** | Length of the pattern |
-| **Actor Behavior** | Actor involvement |
-| **Book Behavior** | Thick / thin / hollow |
-| **Memory Interaction** | Reinforcement / violation / none |
-| **Spike Interaction** | Burst / flick / ladder / dump / V |
-| **Structure Before** | Engine state before the pattern |
-| **Structure After** | Engine state after the pattern |
-| **Notes** | Freeform structural notes |
+## Future Expansion
 
-🔹 Navigation
-Jump to related layers:
+Planned improvements include:
 
-Layer 7.1 — Synthetic Market Tracker
-
-Layer 6.6 — Synthetic Spikes
-
-Layer 6.7 — Synthetic Shared Timing
-
-Layer 4.2 — Movement‑Family Behavior
-
-Layer 4.3 — Actor Registry
-
-Layer 5 — Memory Taps
-
-Layer 6 — Price Spikes
-
-
+- automated pattern detection  
+- pattern‑family clustering  
+- actor‑pressure scoring  
+- pattern‑to‑forecast mapping  

@@ -1,69 +1,93 @@
-Layer 6.8 — Flat Spike Markets
-Dead Engines, Suppressed Synthetic Behavior, Low‑Volatility Windows & Structural Silence
+# Layer 6.8 — Flat Spike Markets
 
-Usage
+Layer 6.8 tracks flat‑spike markets — engines that produce sudden, isolated burst events without traditional spike cycles.  
+These markets often show long periods of drift, hollow‑book movement, or low‑volatility compression before igniting into large burst cycles.
+
+Flat‑spike markets are critical for identifying:
+
+- cascade bursts  
+- ladder bursts  
+- single‑burst ignition windows  
+- multi‑peak burst cycles  
+- pre‑ignition signatures  
+- actor‑driven burst patterns  
+- mechanical burst families  
+
+This layer captures the full structural behavior of these markets, including start price, peak price, movement type, run length, pre‑event signals, and actor behavior.
+
+---
+
+## Purpose of This Layer
+
 Use Layer 6.8 to:
 
-identify markets with silent engines
+- identify flat‑spike ignition windows  
+- classify burst type (small, medium, large, cascade, ladder)  
+- track multi‑peak burst cycles  
+- detect pre‑ignition signatures  
+- analyze actor behavior during burst cycles  
+- correlate burst events with liquidation patterns  
+- support engine‑evolution and pattern analysis  
 
-detect synthetic suppression windows
+Flat‑spike markets reveal **mechanical burst families**, **synthetic burst coordination**, and **actor‑driven ignition logic**.
 
-track drift corridors
+---
 
-diagnose actor absence
+## What This Layer Contains
 
-understand book thickness preventing spikes
+- market name  
+- date and time  
+- start price  
+- peak price  
+- movement type  
+- total run length  
+- pre‑event notes  
+- actor‑behavior notes  
+- shared‑movement notes  
+- extra structural notes  
 
-build flat‑market case studies
+Each entry represents a complete flat‑spike burst cycle.
 
-feed synthetic market tracker (Layer 7.1)
+---
 
-support pattern recognition (Layer 7.2)
+## Connections to Other Layers
 
+### Master Schema  
+Layer 6.8 corresponds to **Flat Spike Markets** in the 20‑Layer Master Schema.
 
-🔹 Flat Spike Types
+### Proto‑Database  
+Maps to the SQL table:  
+- `flat_spike_markets`
 
-| **Flat Type** | **Definition** |
-| --- | --- |
-| **True Flat** | No spikes of any kind |
-| **Synthetic Suppressed** | Synthetic engine intentionally muted |
-| **Natural Drift** | Natural engine stuck in drift corridor |
-| **Compression Flat** | Tight compression preventing spikes |
-| **Actor‑Absent Flat** | No actor presence → no spikes |
-| **Book‑Thick Flat** | Thick book prevents spike formation |
-| **Pre‑Ignition Flat** | Engine silent before ignition cycle |
+### Image Library  
+References visuals from:  
+- Burst‑Patterns  
+- Synthetic‑Spikes  
+- Shared‑Timing  
+- Engine‑Evolution  
 
-| **Column** | **Purpose** |
-| --- | --- |
-| **Market** | Which market is flat |
-| **Date** | When the flat window occurred |
-| **Flat Type** | True / Suppressed / Drift / Compression / Actor‑Absent / Thick‑Book / Pre‑Ignition |
-| **Spike Count** | Number of spikes in the window |
-| **Synthetic Spike Count** | Number of synthetic spikes |
-| **Actor Presence** | Low / none |
-| **Book Behavior** | Thick / medium / thin |
-| **Drift Corridor** | Whether drift corridor is active |
-| **Compression Level** | Tight / medium / loose |
-| **Memory Interaction** | None / shallow taps |
-| **Notes** | Freeform structural notes |
+---
 
+## Why Layer 6.8 Matters
 
+Flat‑spike markets enable:
 
-🔹 Navigation
-Jump to related layers:
+- burst‑family classification  
+- multi‑peak cycle detection  
+- actor‑driven burst analysis  
+- pre‑ignition signature identification  
+- synthetic‑engine detection  
+- macro‑burst forecasting  
 
-Layer 6 — Price Spikes
+This layer is essential for understanding markets that behave outside traditional spike‑cycle engines.
 
-Layer 6.6 — Synthetic Spikes
+---
 
-Layer 6.7 — Synthetic Shared Timing
+## Future Expansion
 
-Layer 4.2 — Movement‑Family Behavior
+Planned improvements include:
 
-Layer 7.1 — Synthetic Market Tracker
-
-Layer 7.2 — Patterns
-
-
-
-
+- automated burst‑cycle detection  
+- burst‑family clustering  
+- actor‑pressure scoring  
+- ignition‑signature modeling  

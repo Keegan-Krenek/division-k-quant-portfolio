@@ -1,56 +1,83 @@
-Layer 6.7 — Synthetic Shared Timing
-Cross‑Market Timing Windows, Coordinated Synthetic Behavior & Engine Synchronization
+# Layer 6.6 — Synthetic Spikes
 
-🔹 Usage
+Layer 6.6 catalogs synthetic spike behavior across all markets.  
+Synthetic spikes are non‑natural displacement events created by actors, synthetic engines, or coordinated burst‑patterns.  
+They reveal how artificial pressure interacts with engine geometry, memory bands, drift floors, and hollow‑book zones.
+
+This layer is essential for identifying synthetic engines and understanding how they manipulate structure.
+
+---
+
+## Purpose of This Layer
+
 Use Layer 6.6 to:
 
-Identify synthetic bursts, flicks, ladders
+- classify synthetic spike types (burst, ladder, flick, sweep)  
+- measure synthetic spike size and displacement  
+- track actor‑driven synthetic behavior  
+- identify synthetic reinforcement of memory bands  
+- detect synthetic resets and synthetic V‑recoveries  
+- analyze synthetic interaction with liquidation events  
+- support shared‑timing and pattern analysis  
 
-Track synthetic timing clusters
+Synthetic spikes reveal **engine manipulation**, **actor coordination**, and **synthetic cycle behavior**.
 
-Detect synthetic memory reinforcement
+---
 
-Map synthetic dump → synthetic V sequences
+## What This Layer Contains
 
-Diagnose actor‑driven manipulation
+- synthetic spike timestamps  
+- spike size  
+- spike pattern type  
+- structure before spike  
+- structure after spike  
+- actor reaction  
+- engine reaction  
+- synthetic interaction notes  
+- freeform structural notes  
 
-Build synthetic case studies
+Each entry represents a complete synthetic spike event.
 
-Feed timing layers (6.7)
+---
 
-Identify pre‑ignition windows
+## Connections to Other Layers
 
-Track synthetic coil resets
+### Master Schema  
+Layer 6.6 corresponds to **Synthetic Spikes** in the 20‑Layer Master Schema.
 
-🔹 Synthetic Spike Types
+### Proto‑Database  
+Maps to the SQL table:  
+- `synthetic_spikes`
 
-| **Synthetic Type** | **Definition** |
-| --- | --- |
-| **Synthetic Burst** | Large artificial expansion burst |
-| **Synthetic Flick** | Small artificial flick triggered by actor timing |
-| **Synthetic Ladder** | Multi‑shelf climb triggered by ladder bots |
-| **Synthetic Coil Reset** | Artificial reset of coil structure |
-| **Synthetic Memory Reinforcement** | Synthetic tap to reinforce memory band |
-| **Synthetic Dump** | Forced synthetic dump candle |
-| **Synthetic V‑Recovery** | Artificial V‑shape recovery |
-| **Synthetic Timing Cluster** | Multiple synthetic spikes in tight timing window |
+### Image Library  
+References visuals from:  
+- Synthetic‑Spikes  
+- Spike‑Patterns  
+- Liquidation‑Events  
+- Shared‑Market‑Timing  
 
+---
 
-| **Column** | **Purpose** |
-| --- | --- |
-| **Market** | Which engine the synthetic spike occurred in |
-| **Date** | When the spike happened |
-| **Time (PDT)** | Exact timestamp |
-| **Synthetic Type** | Burst / Flick / Ladder / Reinforcement / Dump / V |
-| **Spike Size** | Magnitude of the synthetic spike |
-| **Memory Interaction** | Whether the spike reinforced or violated memory |
-| **Actor Timing** | Actor cluster involvement |
-| **Book Behavior** | Thick / thin / hollow |
-| **Structure Before** | Engine state before the synthetic spike |
-| **Structure After** | Engine state after the synthetic spike |
-| **Dump Candle Signature** | Synthetic dump behavior |
-| **Recovery Signature** | Synthetic V / coil reset |
-| **Notes** | Freeform structural notes |
+## Why Layer 6.6 Matters
 
+Synthetic spikes enable:
 
+- synthetic‑engine detection  
+- actor‑driven spike analysis  
+- memory‑band reinforcement modeling  
+- synthetic‑reset identification  
+- shared‑timing correlation  
+- pattern‑family alignment  
 
+This layer is essential for understanding artificial engine behavior.
+
+---
+
+## Future Expansion
+
+Planned improvements include:
+
+- automated synthetic‑spike detection  
+- synthetic‑pattern classification  
+- actor‑pressure scoring  
+- synthetic‑cycle forecasting  

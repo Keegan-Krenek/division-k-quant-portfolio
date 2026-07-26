@@ -1,96 +1,80 @@
+# Layer 4 — Engine Map (Full Data)
 
-Purpose
-Layer 4 defines the engine profile for each market.
-It is the first “deep structure” layer in your system — the point where markets stop being tickers and start being engines.
+This file contains the complete engine‑map dataset for all markets.  
+It includes all columns, definitions, examples, and raw entries.
 
-This layer captures:
+---
 
-Engine type (Synthetic / Natural / Hybrid)
+## Column Definitions
 
-Typical spike interval
+| Column | Purpose |
+|--------|---------|
+| **Market** | Which engine this profile belongs to |
+| **Engine Type** | Synthetic / Natural / Hybrid |
+| **Typical Spike Interval** | Time between spikes (compressed read) |
+| **Typical Spike Size** | Average spike magnitude |
+| **Memory Tap Frequency** | How often memory bands get tested |
+| **Memory Tap Depth** | How deep the retests go |
+| **Coil Behavior** | Tight / loose / erratic |
+| **Actor Presence** | Low / medium / high |
+| **Book Behavior** | Thick / thin / hollow |
+| **Dump Candle Signature** | How dumps form (shape, speed, depth) |
+| **Recovery Signature** | How recoveries form (V‑shape, slow, synthetic) |
+| **Notes** | Freeform engine personality notes |
 
-Typical spike size
+---
 
-Memory tap frequency & depth
+## Column Layout (30M Graph)
 
-Coil behavior
+Market | Engine Type | Typical Spike Interval | Typical Spike Size | Memory Tap Frequency | Memory Tap Depth | Coil Behavior | Actor Presence | Book Behavior | Dump Candle Signature | Recovery Signature | Notes
 
-Actor presence
+---
 
-Book behavior
+## Engine Map Entries
 
-Dump candle signature
+### JTO — Synthetic Engine
+- **Typical Spike Interval:** 45–90 sec  
+- **Typical Spike Size:** 40–70 pts  
+- **Memory Tap Frequency:** High  
+- **Memory Tap Depth:** Medium  
+- **Coil Behavior:** Tight → sudden release  
+- **Actor Presence:** High  
+- **Book Behavior:** Thin → thick  
+- **Dump Signature:** Fast synthetic dumps  
+- **Recovery Signature:** Strong synthetic V‑recoveries  
+- **Notes:** Engine feels managed by a team  
 
-Recovery signature
+---
 
-Freeform engine personality notes
+### ALLO — Synthetic Engine
+- **Typical Spike Interval:** 45 sec  
+- **Typical Spike Size:** 268–330 pts  
+- **Memory Tap Frequency:** High  
+- **Memory Tap Depth:** Medium  
+- **Coil Behavior:** Tight → 4‑hour windows  
+- **Actor Presence:** High  
+- **Book Behavior:** Thin → thick  
+- **Dump Signature:** Fast synthetic dumps  
+- **Recovery Signature:** Strong synthetic V‑recoveries  
+- **Notes:** 4 ALLO bid stacks clear books well  
 
+---
 
-Example Engine Profiles
+### TIA‑USD — Synthetic Engine
+- **Typical Spike Size:** 191 pts  
+- *(Other fields pending)*  
 
-JTO — Synthetic Engine
+---
 
-| Field | Value |
-| --- | --- |
-| Engine Type | Synthetic |
-| Typical Spike Interval | 45–90 sec |
-| Typical Spike Size | 40–70 pts |
-| Memory Tap Frequency | High |
-| Memory Tap Depth | Medium |
-| Coil Behavior | Tight → sudden release |
-| Actor Presence | High |
-| Book Behavior | Thin → thick |
-| Dump Candle Signature | Fast synthetic dumps |
-| Recovery Signature | Strong synthetic V‑recoveries |
-| Notes | Engine feels managed by a team |
+## Notes
 
-ALLO — Synthetic Engine
+Layer 4 engine maps are used by:
 
-| Field | Value |
-| --- | --- |
-| Engine Type | Synthetic |
-| Typical Spike Interval | 45 sec |
-| Typical Spike Size | 268–330 pts |
-| Memory Tap Frequency | High |
-| Memory Tap Depth | Medium |
-| Coil Behavior | Tight → 4‑hour windows |
-| Actor Presence | High |
-| Book Behavior | Thin → thick |
-| Dump Candle Signature | Fast synthetic dumps |
-| Recovery Signature | Strong synthetic V‑recoveries |
-| Notes | 4 ALLO bid stacks clear books well |
+- Layer 4.2 (Movement Families)  
+- Layer 4.3 (Actor Registry)  
+- Layer 5 (Memory Taps)  
+- Layer 6 (Spike Systems)  
+- Case Studies  
 
+Engine maps form the backbone of structural engine classification.
 
-TIA‑USD — Synthetic Engine
-
-| Field | Value |
-| --- | --- |
-| Engine Type | Synthetic |
-| Typical Spike Size | ~191 pts |
-| Memory Tap Frequency | Medium |
-| Memory Tap Depth | Medium |
-| Coil Behavior | Tight |
-| Actor Presence | Medium |
-| Book Behavior | Thin |
-| Dump Candle Signature | Synthetic dump → fast recovery |
-| Recovery Signature | Synthetic V‑shape |
-| Notes | Engine shows consistent synthetic spike rhythm |
-
-Schema Connections
-Upstream
-Layer 1 — Markets
-
-Layer 2 — Daily Logs
-
-Downstream
-Layer 4.2 — Movement‑Family Behavior
-
-Layer 4.3 — Actor Registry
-
-Layer 5 — Memory Taps
-
-Layer 6 — Spike System
-
-Layer 7 — Synthetic Market Tracker
-
-Layer 8 — Engine Evolution

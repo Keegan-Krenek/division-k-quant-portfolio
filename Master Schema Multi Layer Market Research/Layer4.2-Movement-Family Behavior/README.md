@@ -1,42 +1,87 @@
-Layer 4.2 — Movement‑Family Behavior
-Engine Movement Families, Structural Phases, Geometry Tests & Transition Logic
+# Layer 4.2 — Movement Families
 
+Layer 4.2 defines the structural movement families that govern how an engine transitions, expands, rejects, cascades, or collapses.  
+Movement families describe the geometry, pacing, anchor rules, turbulence markers, and boundary behavior that determine how an engine moves through its lanes.
 
-Usage
+This layer is the behavioral engine map — the “rules of motion” that sit beneath spikes, candles, actors, and timing.
+
+---
+
+## Purpose of This Layer
+
 Use Layer 4.2 to:
 
-identify which movement family is active
+- identify movement families and their lifespan  
+- understand approach → test → resolution sequencing  
+- track geometry‑break and family‑switch conditions  
+- classify drift floors, ceilings, and burst lanes  
+- interpret turbulence markers and anchor relevance  
+- map cascade lanes and expansion corridors  
 
-predict geometry breaks
+Movement families define **how** an engine moves, not just **where** it moves.
 
-track ceiling migration
+---
 
-understand actor requirements
+## What This Layer Contains
 
-detect inversion turbulence
+- family lifespan  
+- branch structure (continuation vs failure)  
+- sequence count and timing  
+- geometry‑break conditions  
+- family‑switch triggers  
+- anchor relevance rules  
+- inversion turbulence markers  
+- ceiling migration markers  
+- decay repair markers  
+- drift floor formation and failure conditions  
+- purge‑style sweep conditions  
+- actor‑presence requirements  
+- book‑state requirements  
 
-map lane transitions
+Each entry represents a complete movement‑family profile.
 
-support engine evolution modeling
+---
 
-build movement‑family case studies
+## Connections to Other Layers
 
+### Master Schema  
+Layer 4.2 corresponds to **Movement Families** in the 20‑Layer Master Schema.
 
-Movement Family Components
+### Proto‑Database  
+Maps to the SQL table:  
+- `movement_family`
 
-| Component | Description |
-| --- | --- |
-| **Family Lifespan** | How long the engine stays in a movement family |
-| **Branch Structure** | Continuation vs failure paths |
-| **Sequence Phases** | Approach → Test → Resolution |
-| **Timing Windows** | Duration of each phase |
-| **Geometry‑Break Conditions** | What causes structure to fail |
-| **Family‑Switch Triggers** | What causes transitions |
-| **Anchor Relevance** | When anchors matter or decay |
-| **Inversion Turbulence** | Turbulence during inversion attempts |
-| **Ceiling Migration** | How ceilings shift during movement |
-| **Decay Repair** | How the engine repairs broken geometry |
-| **Drift Floor Formation** | How drift floors form or fail |
-| **Purge Sweep Logic** | How purge‑style sweeps occur |
-| **Actor Requirements** | Actor presence needed for each family |
-| **Book Requirements** | Book thickness/hollowness needed |
+### Image Library  
+References visuals from:  
+- Movement‑Families  
+- Engine‑Maps  
+- Spike‑Patterns  
+- Shared‑Market‑Timing  
+
+---
+
+## Why Layer 4.2 Matters
+
+Movement families enable:
+
+- cascade‑lane prediction  
+- drift‑floor identification  
+- ceiling‑test interpretation  
+- turbulence detection  
+- geometry‑break forecasting  
+- actor‑pressure alignment  
+- structural sequencing analysis  
+
+This layer is essential for understanding the engine’s internal motion logic.
+
+---
+
+## Future Expansion
+
+Planned improvements include:
+
+- automated movement‑family detection  
+- anchor‑relevance scoring  
+- turbulence‑marker classification  
+- ceiling‑migration forecasting  
+- movement‑family clustering  

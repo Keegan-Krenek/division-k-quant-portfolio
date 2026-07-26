@@ -1,132 +1,89 @@
-Layer 7.2 — Patterns
-Synthetic & Natural Pattern Recognition, Engine Signatures, Structural Cycles & Multi‑Layer Pattern Mapping
+# Layer 7.2 — Patterns (Full Data)
 
-🔹 Purpose
-Layer 7.2 is the pattern‑recognition layer — the part of your system that identifies, classifies, and tracks engine patterns across all markets and all timeframes.
+This file contains the complete pattern dataset for all markets.  
+Add your raw pattern entries directly into this file.
 
-This layer captures:
+---
 
-synthetic patterns
+## Column Definitions
 
-natural patterns
+| Column | Purpose |
+|--------|---------|
+| **Pattern Name** | Name of the structural pattern |
+| **Pattern Family** | Burst / Drift / Ladder / Cascade / Synthetic / Timing |
+| **Description** | What the pattern looks like |
+| **Markets** | Markets where the pattern appears |
+| **Lifespan** | Duration of pattern before break |
+| **Frequency** | How often the pattern appears |
+| **Actor Involvement** | Actor pressure level |
+| **Synthetic Involvement** | Synthetic engine presence |
+| **Timing Alignment** | Shared timing windows |
+| **Notes** | Freeform structural notes |
 
-hybrid patterns
+---
 
-ignition cycles
+## Column Layout
 
-drift‑floor failures
+Pattern Name | Pattern Family | Description | Markets | Lifespan | Frequency | Actor Involvement | Synthetic Involvement | Timing Alignment | Notes
 
-ceiling migrations
+---
 
-burst → coil → burst loops
+# Pattern Entries  
+*(Add your raw pattern entries below.)*
 
-dump → V → ladder sequences
+### Example Pattern Entry (Template)
 
-actor‑driven patterns
+**Pattern Name:** Ladder‑Burst Sequence  
+**Pattern Family:** Synthetic Ladder  
+**Description:** Repeating ladder steps followed by burst ignition  
+**Markets:** SYND, CHECK‑USD  
+**Lifespan:** 3–12 hours  
+**Frequency:** Medium  
+**Actor Involvement:** High  
+**Synthetic Involvement:** Strong  
+**Timing Alignment:** Sometimes aligns with 15‑minute synthetic windows  
+**Notes:** Appears during synthetic‑engine activation cycles  
 
-book‑driven patterns
+---
 
-memory‑driven patterns
+### Example Pattern Entry (Template)
 
-multi‑market shared patterns
+**Pattern Name:** 3‑Peak Burst Cycle  
+**Pattern Family:** Cascade Burst  
+**Description:** Three burst peaks separated by valleys  
+**Markets:** ERA, 00‑USD, GST  
+**Lifespan:** 6–30 hours  
+**Frequency:** High  
+**Actor Involvement:** Medium  
+**Synthetic Involvement:** Medium  
+**Timing Alignment:** Often aligns with liquidation cycles  
+**Notes:** Strong indicator of mechanical burst family  
 
-This is the layer where your system becomes a full engine‑pattern model, not just a spike tracker.
+---
 
+### Example Pattern Entry (Template)
 
-🔹 Example Pattern Records
+**Pattern Name:** Rolling‑Hill Synthetic Pattern  
+**Pattern Family:** Synthetic Timing  
+**Description:** Repeating small burst candle with wick 3–5 candles before ignition  
+**Markets:** QI‑USD  
+**Lifespan:** Multi‑day  
+**Frequency:** High  
+**Actor Involvement:** Medium  
+**Synthetic Involvement:** Strong  
+**Timing Alignment:** Aligns with synthetic shared‑timing windows  
+**Notes:** Spike volume signature 1.5–7M  
 
+---
 
-JTO — Synthetic Burst → Coil → Burst
+## Notes
 
-| Field | Value |
-| --- | --- |
-| Market | JTO |
-| Pattern Type | Synthetic |
-| Pattern Name | Burst → Coil → Burst |
-| Start Time | 14:20 |
-| End Time | 14:45 |
-| Duration | 25 min |
-| Actor Behavior | High |
-| Book Behavior | Thin → thick |
-| Memory Interaction | Medium tap |
-| Spike Interaction | Burst → coil → burst |
-| Structure Before | Tight coil |
-| Structure After | Ladder continuation |
-| Notes | Classic synthetic burst cycle; actor cluster present |
+Layer 7.2 patterns are used by:
 
+- Layer 8 (Engine Evolution)  
+- Layer 9 (Forecasting)  
+- Case Studies  
+- Synthetic‑Engine Analysis  
 
-ALLO — Synthetic Dump → V → Ladder
+Patterns reveal engine identity and structural predictability.
 
-
-| Field | Value |
-| --- | --- |
-| Market | ALLO |
-| Pattern Type | Synthetic |
-| Pattern Name | Dump → V → Ladder |
-| Start Time | 11:45 |
-| End Time | 12:10 |
-| Duration | 25 min |
-| Actor Behavior | High |
-| Book Behavior | Hollow → thick |
-| Memory Interaction | Medium tap depth |
-| Spike Interaction | Dump → V → ladder |
-| Structure Before | Tight coil |
-| Structure After | Ladder climb |
-| Notes | Synthetic dump triggered by hollow book; ladder bots active |
-
-
-SYND — Synthetic Flick Loop
-
-| Field | Value |
-| --- | --- |
-| Market | SYND |
-| Pattern Type | Synthetic |
-| Pattern Name | Flick Loop |
-| Start Time | 09:00 |
-| End Time | 09:20 |
-| Duration | 20 min |
-| Actor Behavior | Medium |
-| Book Behavior | Thin |
-| Memory Interaction | Shallow taps |
-| Spike Interaction | Repeated flicks |
-| Structure Before | Tight synthetic coil |
-| Structure After | Coil reset |
-| Notes | Flick cluster repeated every 5 minutes |
-
-XPL — Natural Drift Corridor
-
-| Field | Value |
-| --- | --- |
-| Market | XPL |
-| Pattern Type | Natural |
-| Pattern Name | Drift Corridor |
-| Start Time | 10:00 |
-| End Time | 11:00 |
-| Duration | 60 min |
-| Actor Behavior | Low |
-| Book Behavior | Medium |
-| Memory Interaction | None |
-| Spike Interaction | None |
-| Structure Before | Loose coil |
-| Structure After | Slow recovery |
-| Notes | Natural drift corridor; no synthetic involvement |
-
-
-🔹 Schema Connections
-Upstream:
-
-Layer 7.1 — Synthetic Market Tracker
-
-Layer 6.6 — Synthetic Spikes
-
-Layer 6.7 — Synthetic Shared Timing
-
-Layer 4.3 — Actor Registry
-
-Downstream:
-
-Layer 8 — Synthetic Engine Evolution (if you build it)
-
-Pattern‑based trading logic (if you build it)
-
-Layer 7.2 is the pattern‑recognition engine that powers synthetic detection, macro analysis, and engine evolution.

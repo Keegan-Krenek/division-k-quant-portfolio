@@ -1,43 +1,76 @@
-Layer 6.3 — 15‑Minute Candle Tracking
-Mid‑Interval Engine Behavior, Geometry Testing & Movement‑Family Transitions.
+# Layer 6.3 — 15‑Minute Candle Tracking
 
-Usage
+Layer 6.3 records 15‑minute candle behavior for each market.  
+This timeframe provides a mid‑macro structural view, revealing burst corridors, actor‑pressure waves, synthetic resets, and early liquidation‑cycle formation.
+
+15‑minute candles are ideal for identifying structural transitions that are too large for 1‑minute and 5‑minute candles, but too early to appear in 1‑hour cycles.
+
+---
+
+## Purpose of This Layer
+
 Use Layer 6.3 to:
 
-Identify multi‑hour synthetic ignition cycles
+- track mid‑macro structural behavior  
+- identify burst‑corridor formation  
+- detect actor‑pressure waves  
+- observe synthetic resets and laddering  
+- support spike, liquidation, and shared‑timing analysis  
+- validate short‑cycle reads from 6.1 and 6.2  
 
-Track macro ladder sequences
+This layer provides the “mid‑macro structural view” of engine behavior.
 
-Detect vacuum collapses
+---
 
-Map macro burst sequences
+## What This Layer Contains
 
-Understand dump → recovery behavior
+- timestamped 15‑minute candles  
+- open / high / low / close values  
+- structural notes (burst, drift, hollow, laddering, actor behavior)  
+- synthetic burst sequences  
+- mid‑macro resets  
 
-Build multi‑hour case studies
+Each candle entry represents fifteen minutes of structural engine behavior.
 
-Feed macro spike layers (6.4)
+---
 
-Identify ceiling migrations
+## Connections to Other Layers
 
-Diagnose drift‑floor failures
+### Master Schema  
+Layer 6.3 corresponds to **Candle Trackers (15M)** in the 20‑Layer Master Schema.
 
+### Proto‑Database  
+Maps to the SQL table:  
+- `candle_trackers_15m`
 
-This layer compresses microstructure (6.1) and mid‑structure (6.2) into macro‑readable structural cycles.
+### Image Library  
+References visuals from:  
+- Candle‑Sequences  
+- Spike‑Patterns  
+- Synthetic‑Spikes  
+- Shared‑Market‑Timing  
 
-| **Column** | **Purpose** |
-| --- | --- |
-| **Market** | Which market the spike occurred in |
-| **Date** | When the spike happened |
-| **Time (PDT)** | Exact timestamp |
-| **Spike Size** | Magnitude of the spike |
-| **Spike Type** | Natural / Synthetic / Actor‑Forced / Vacuum |
-| **Memory Interaction** | Whether the spike interacted with a memory band |
-| **Structure Before** | Engine state before the spike |
-| **Structure After** | Engine state after the spike |
-| **Actor Behavior** | Actor involvement |
-| **Book Behavior** | Thick / thin / hollow |
-| **Dump Candle Signature** | Shape & speed of dumps |
-| **Recovery Signature** | V‑shape / slow / synthetic |
-| **Notes** | Freeform structural notes |
+---
 
+## Why Layer 6.3 Matters
+
+15‑minute candles enable:
+
+- burst‑corridor detection  
+- actor‑pressure wave identification  
+- synthetic‑ladder recognition  
+- liquidation‑cycle early detection  
+- multi‑timeframe confirmation  
+
+This layer is essential for mid‑macro structural modeling.
+
+---
+
+## Future Expansion
+
+Planned improvements include:
+
+- automated 15M candle ingestion  
+- burst‑corridor classification  
+- actor‑pressure scoring  
+- synthetic‑reset detection  

@@ -1,43 +1,77 @@
-Layer 6.2 — 5‑Minute Candle Tracking
-Short‑Interval Structural Movement, Micro‑Spike Aggregation & Drift Behavior
+# Layer 6.2 — 5‑Minute Candle Tracking
 
-🔹 Usage
+Layer 6.2 records 5‑minute candle behavior for each market.  
+This timeframe provides a mid‑resolution structural view, bridging the micro‑precision of 1‑minute candles with the broader structural cycles seen in 15‑minute and 1‑hour layers.
+
+5‑minute candles are ideal for identifying short‑cycle bursts, actor pressure waves, synthetic laddering, and early liquidation‑cascade signatures.
+
+---
+
+## Purpose of This Layer
+
 Use Layer 6.2 to:
 
-Identify multi‑minute synthetic ladder climbs
+- track short‑cycle structural behavior  
+- identify actor‑driven bursts and resets  
+- detect synthetic laddering patterns  
+- observe hollow‑book displacement events  
+- support spike, liquidation, and shared‑timing analysis  
+- validate micro‑bursts seen in Layer 6.1  
 
-Track actor‑forced breakouts
+This layer provides the “short‑cycle structural view” of engine behavior.
 
-Detect vacuum spikes
+---
 
-Map mid‑scale burst sequences
+## What This Layer Contains
 
-Understand dump → recovery behavior
+- timestamped 5‑minute candles  
+- open / high / low / close values  
+- structural notes (burst, drift, hollow, laddering)  
+- actor‑driven spike sequences  
+- synthetic burst patterns  
+- short‑cycle resets  
 
-Build mid‑scale case studies
+Each candle entry represents five minutes of structural engine behavior.
 
-Feed higher‑resolution spike layers (6.3–6.4)
+---
 
-Identify pre‑ignition windows
+## Connections to Other Layers
 
-| **Column** | **Purpose** |
-| --- | --- |
-| **Market** | Which market the spike occurred in |
-| **Date** | When the spike happened |
-| **Time (PDT)** | Exact timestamp |
-| **Spike Size** | Magnitude of the spike |
-| **Spike Type** | Natural / Synthetic / Actor‑Forced / Vacuum |
-| **Memory Interaction** | Whether the spike interacted with a memory band |
-| **Structure Before** | Engine state before the spike |
-| **Structure After** | Engine state after the spike |
-| **Actor Behavior** | Actor involvement |
-| **Book Behavior** | Thick / thin / hollow |
-| **Dump Candle Signature** | Shape & speed of dumps |
-| **Recovery Signature** | V‑shape / slow / synthetic |
-| **Notes** | Freeform structural notes |
+### Master Schema  
+Layer 6.2 corresponds to **Candle Trackers (5M)** in the 20‑Layer Master Schema.
 
+### Proto‑Database  
+Maps to the SQL table:  
+- `candle_trackers_5m`
 
+### Image Library  
+References visuals from:  
+- Candle‑Sequences  
+- Spike‑Patterns  
+- Synthetic‑Spikes  
+- Shared‑Market‑Timing  
 
+---
 
+## Why Layer 6.2 Matters
 
+5‑minute candles enable:
 
+- short‑cycle burst detection  
+- actor‑pressure interpretation  
+- synthetic‑ladder recognition  
+- early liquidation‑cascade identification  
+- multi‑timeframe confirmation  
+
+This layer is essential for validating micro‑reads and building short‑cycle structural models.
+
+---
+
+## Future Expansion
+
+Planned improvements include:
+
+- automated 5M candle ingestion  
+- burst‑cycle classification  
+- actor‑pressure scoring  
+- synthetic‑ladder detection  

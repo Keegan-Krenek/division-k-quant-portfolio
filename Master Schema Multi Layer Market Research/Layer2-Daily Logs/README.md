@@ -1,31 +1,77 @@
-Usage
+# Layer 2 — Daily Logs
+
+Layer 2 tracks the daily structural state of each market.  
+It provides a compressed snapshot of engine behavior, actor pressure, spike activity, volume cycles, and stability conditions.  
+This layer acts as the bridge between market identity (Layer 1) and all downstream structural layers.
+
+---
+
+## Purpose of This Layer
+
 Use Layer 2 to:
 
-track daily engine behavior at a compressed, readable scale
+- capture daily engine behavior  
+- track natural vs synthetic spike activity  
+- record volume cycles and peak activity windows  
+- monitor actor pressure and book stability  
+- identify early signs of structural shifts  
+- support Layers 3–6 with daily context  
 
-identify high‑pressure windows
+Layer 2 provides the “daily heartbeat” of every engine.
 
-detect synthetic vs natural spike days
+---
 
-map peak volume timing and volume‑sequence structure
+## What This Layer Contains
 
-observe actor pressure and book displacement
+- end‑day highs and lows  
+- peak volume time  
+- compressed volume sequences  
+- natural spike count  
+- synthetic spike count  
+- largest spike sizes  
+- actor pressure notes  
+- engine stability notes  
 
-monitor engine stability across days
+Each entry represents one full day of structural behavior.
 
-correlate daily behavior with trade context (Layer 3)
+---
 
-feed engine personality mapping (Layer 4)
+## Connections to Other Layers
 
-support spike system analysis (Layer 6)
+### Master Schema  
+Layer 2 corresponds to **Layer 2 — Daily Structural Logs** in the 20‑Layer Master Schema.
 
-build synthetic market case studies (Layer 7.1)
+### Proto‑Database  
+Maps to the SQL table:  
+- `daily_logs`
 
-| **Date** | **Market** | **End‑Day High** | **End‑Day Low** | **Peak Volume Time** | **Volume by Time** | **Price Spike Count** | **Synthetic Spike Count** | **Largest Spike Size** | **Largest Synthetic Spike Size** | **Actor Pressure Notes** | **Engine Stability Notes** |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 6/20/2026 | JTO | 7520 | 7420 | 14:32 | 17.5k → 21.2k → 4.7k → 13.4k | 3 | 5 | 42 pts | 65 pts | High actor presence | Force reset / liquidation sweeps |
-| 6/20/2026 | JTO | 0.1284 | 0.1241 | 9:15 | 3k → 6k → 10k | 1 | 0 | 18 pts | 0 | Medium pressure | Force reset / liquidation sweeps |
-| 6/20/2026 | JTO | 0.442 | 0.421 | 11:50 | 1.2k → 2.1k | 2 | 1 | 12 pts | 20 pts | Low pressure | Force reset / liquidation sweeps |
-| 6/21/2026 | ALLO | — | — | — | — | 5 | 5 | — | — | High actor presence | Force reset / liquidation sweeps |
-| 6/22/2026 | ALLO | 0.4678 | — | 0:45 | — | 3 | 3 | — | — | Medium pressure | Force reset / liquidation sweeps |
+### Image Library  
+Daily logs reference visuals from:  
+- Candle‑Sequences  
+- Spike‑Patterns  
+- Engine‑Maps  
 
+---
+
+## Why Layer 2 Matters
+
+Daily logs enable:
+
+- structural trend detection  
+- actor pressure tracking  
+- spike cycle analysis  
+- stability forecasting  
+- multi‑day engine reconstruction  
+
+Layer 2 is essential for understanding how an engine evolves day‑to‑day.
+
+---
+
+## Future Expansion
+
+Planned improvements include:
+
+- automated daily ingestion  
+- actor pressure scoring  
+- stability indexing  
+- multi‑market daily comparison dashboards  

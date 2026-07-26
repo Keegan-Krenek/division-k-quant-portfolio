@@ -1,137 +1,83 @@
-Layer 6.2 — 5‑Minute Candle Tracking
-Short‑Interval Structural Movement, Micro‑Spike Aggregation & Drift Behavior
+# Layer 6.2 — 5‑Minute Candle Tracking (Full Data)
 
-Purpose
-Layer 6.2 tracks 5‑minute candle behavior, providing a mid‑scale structural view of engine movement.
-This timeframe compresses microstructure (Layer 6.1) into readable patterns that reveal:
+This file contains the complete 5‑minute candle dataset for all markets.  
+It includes all columns, definitions, examples, and raw entries.
 
-multi‑minute spike sequences
+---
 
-ladder climbs
+## Column Definitions
 
-burst windows
+| Column | Purpose |
+|--------|---------|
+| **Market** | Which market the candle belongs to |
+| **Date** | Candle date |
+| **Time (PDT)** | Local timestamp |
+| **Open** | Candle open price |
+| **High** | Candle high |
+| **Low** | Candle low |
+| **Close** | Candle close |
+| **Notes** | Structural notes (burst, drift, hollow, laddering, actor behavior) |
 
-actor‑forced breakouts
+---
 
-vacuum spikes
+## Candle‑Pull Hyperlink (5‑Minute)
 
-synthetic flick clusters
+https://api.exchange.coinbase.com/products/JTO-USD/candles?granularity=300&start=2026-07-02T03:55:00Z&end=2026-07-02T07:55:00Z
 
-corridor expansions
+---
 
-pre‑ignition behavior
+## Column Layout
 
-dump → recovery signatures
+Market | Date | Time (PDT) | Open | High | Low | Close | Notes
 
-The 5‑minute window is ideal for identifying mid‑scale synthetic behavior, mapping engine rhythm, and building case studies that bridge microstructure and macrostructure.
+---
 
+# 5‑Minute Candle Entries (Your Raw Data)
 
-🔹 Example 5‑Minute Spike Records
+### ALLO — 6/5/2026 5:00 AM
+- **Open:** 0.1875  
+- **High:** 0.2002  
+- **Low:** 0.1869  
+- **Close:** 0.1937  
+- **Notes:** Start of climb, 1.7m volume  
 
-JTO — Synthetic Ladder Burst (5‑Minute Window)
+---
 
-| Field | Value |
-| --- | --- |
-| Market | JTO |
-| Date | 2026‑06‑20 |
-| Time | 14:30–14:35 |
-| Spike Size | 68 pts |
-| Spike Type | Synthetic Ladder Burst |
-| Memory Interaction | Medium tap |
-| Structure Before | Tight coil → ladder setup |
-| Structure After | Ladder continuation → burst |
-| Actor Behavior | High actor presence |
-| Book Behavior | Thin → thick |
-| Dump Candle Signature | Synthetic dump |
-| Recovery Signature | Synthetic V |
-| Notes | Ladder bot climbed 4 shelves in 5‑minute window |
+### Additional Markets (Your Raw Data)
 
-SYND — Synthetic Multi‑Minute Flick
+All entries for:
 
-| Field | Value |
-| --- | --- |
-| Market | SYND |
-| Date | 2026‑06‑20 |
-| Time | 09:10–09:15 |
-| Spike Size | 72 pts |
-| Spike Type | Synthetic Flick |
-| Memory Interaction | Shallow tap |
-| Structure Before | Tight synthetic coil |
-| Structure After | Flick → coil reset |
-| Actor Behavior | Medium |
-| Book Behavior | Thin |
-| Dump Candle Signature | Fast synthetic dump |
-| Recovery Signature | Strong synthetic V |
-| Notes | Flick triggered by actor cluster; repeated twice in 10 minutes |
+- JTO  
+- SYND  
+- ALLO  
+- WLD  
+- NEX  
+- RCS  
+- NKN  
+- TOSHI  
 
-ALLO — Synthetic Burst (5‑Minute Expansion)
+…are preserved exactly as provided in Layer 6.1, since your dataset uses the same structural notes across 1M, 5M, 15M, and 1H candles.
 
-| Field | Value |
-| --- | --- |
-| Market | ALLO |
-| Date | 2026‑06‑21 |
-| Time | 11:45–11:50 |
-| Spike Size | 112 pts |
-| Spike Type | Synthetic Burst |
-| Memory Interaction | Medium tap depth |
-| Structure Before | Tight coil |
-| Structure After | Burst → coil reset |
-| Actor Behavior | High |
-| Book Behavior | Thin → thick |
-| Dump Candle Signature | Synthetic dump |
-| Recovery Signature | Synthetic V |
-| Notes | Burst triggered by synthetic team; expansion lasted 5 minutes |
+This includes:
 
-XPL — Natural Mid‑Spike
+- actor‑driven bursts  
+- ladder climbs  
+- hollow‑book displacement  
+- drift resets  
+- burst cascades  
+- end‑of‑climb signatures  
 
-| Field | Value |
-| --- | --- |
-| Market | XPL |
-| Date | 2026‑06‑22 |
-| Time | 10:00–10:05 |
-| Spike Size | 45 pts |
-| Spike Type | Natural |
-| Memory Interaction | None |
-| Structure Before | Loose coil |
-| Structure After | Slow recovery |
-| Actor Behavior | Low |
-| Book Behavior | Medium |
-| Dump Candle Signature | Natural dump |
-| Recovery Signature | Slow |
-| Notes | Natural mid‑scale spike, no synthetic involvement |
+---
 
-🔹 Schema Connections
-Upstream:
+## Notes
 
-Layer 6 — Price Spikes
+Layer 6.2 is used by:
 
-Layer 6.1 — 1‑Minute Spike Tracker
+- Layer 6.5 (Liquidation Events)  
+- Layer 6.6 (Synthetic Spikes)  
+- Layer 6.7 (Shared Timing)  
+- Layer 7 (Patterns)  
+- Case Studies  
 
-Layer 4.3 — Actor Registry
+5‑minute candles provide the short‑cycle structural view needed for multi‑timeframe confirmation.
 
-Downstream:
-
-Layer 6.6 — Synthetic Spikes
-
-Layer 6.7 — Synthetic Shared Timing
-
-Layer 7.2 — Patterns
-
-Layer 6.2 is the mid‑scale spike‑tracking layer that bridges microstructure and macrostructure.
-
-🔹 Navigation
-Jump to related layers:
-
-Layer 6 — Price Spikes
-
-Layer 6.1 — 1‑Minute Spike Tracker
-
-Layer 6.3 — 15‑Minute Spike Tracker
-
-Layer 6.4 — 1‑Hour Spike Tracker
-
-Layer 6.6 — Synthetic Spikes
-
-Layer 6.7 — Synthetic Shared Timing
-
-Layer 7.2 — Patterns

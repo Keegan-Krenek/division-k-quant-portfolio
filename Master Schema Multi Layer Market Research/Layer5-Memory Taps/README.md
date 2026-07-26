@@ -1,77 +1,82 @@
-Layer 5 — Memory Taps
-Memory Band Interaction, Tap Depth, Engine Reaction & Structural Behavior
+# Layer 5 — Memory Taps
 
-Usage
+Layer 5 tracks memory‑band interactions — one of the most important structural behaviors inside any engine.  
+A memory tap occurs when price revisits a prior structural zone (shelf, valley, coil, vacuum) and reveals how the engine reacts under pressure.
+
+Memory taps show whether the engine reinforces, weakens, or breaks its underlying geometry.
+
+---
+
+## Purpose of This Layer
+
 Use Layer 5 to:
 
-Identify memory band reinforcement
+- identify memory‑band retests  
+- measure tap frequency and depth  
+- classify tap type (natural, synthetic, actor‑forced, vacuum)  
+- evaluate structural outcomes (hold, break, hesitation, over‑tap)  
+- track actor reaction and engine reaction  
+- understand pre‑tap and post‑tap structure  
 
-Track synthetic vs natural memory behavior
+Memory taps reveal **engine stability**, **actor pressure**, and **geometry integrity**.
 
-Understand actor involvement during taps
+---
 
-Predict spike behavior after memory interactions
+## What This Layer Contains
 
-Diagnose engine stability
+- market identity  
+- tap timestamp  
+- tap frequency  
+- tap depth  
+- tap type  
+- tap outcome  
+- structure before tap  
+- structure after tap  
+- actor reaction  
+- engine reaction  
+- freeform notes  
 
-Build case studies for synthetic control
+Each entry represents a complete structural retest event.
 
-Map dump → recovery signatures
+---
 
-This layer is the memory‑logic engine of your system.
+## Connections to Other Layers
 
-| **Column** | **Purpose** |
-| --- | --- |
-| **Market** | Which engine this memory tap belongs to |
-| **Date** | When the tap occurred |
-| **Typical Spike Interval** | Spike rhythm around the tap |
-| **Typical Spike Size** | Spike magnitude around the tap |
-| **Memory Tap Frequency** | Low / Medium / High |
-| **Memory Tap Depth** | Shallow / Medium / Deep |
-| **Cell Behavior** | How the engine behaves inside the memory cell |
-| **Actor Processing** | Actor involvement during the tap |
-| **Book Behavior** | Thick / thin / hollow |
-| **Dump Candle Signature** | Shape & speed of dumps |
-| **Recovery Signature** | V‑shape / slow / synthetic |
-| **Notes** | Freeform structural notes |
+### Master Schema  
+Layer 5 corresponds to **Memory Taps** in the 20‑Layer Master Schema.
 
+### Proto‑Database  
+Maps to the SQL table:  
+- `memory_taps`
 
+### Image Library  
+References visuals from:  
+- Memory‑Taps  
+- Engine‑Maps  
+- Spike‑Patterns  
+- Candle‑Sequences  
 
-Schema Connections
-Upstream:
+---
 
-Layer 4 — Engine Map
+## Why Layer 5 Matters
 
-Layer 4.3 — Actor Registry
+Memory taps enable:
 
-Downstream:
+- stability analysis  
+- actor‑pressure interpretation  
+- structural reinforcement detection  
+- geometry‑break forecasting  
+- synthetic‑engine behavior analysis  
 
-Layer 6 — Price Spikes
+Memory taps are one of the strongest indicators of engine health.
 
-Layer 6.6 — Synthetic Spikes
+---
 
-Layer 6.7 — Synthetic Shared Timing
+## Future Expansion
 
-Layer 7.2 — Patterns
+Planned improvements include:
 
-Layer 5 is the memory‑behavior layer that powers spike analysis, synthetic detection, and pattern formation.
-
-
-
-Usage
-Use Layer 5 to:
-
-Identify memory band reinforcement
-
-Track synthetic vs natural memory behavior
-
-Understand actor involvement during taps
-
-Predict spike behavior after memory interactions
-
-Diagnose engine stability
-
-Build case studies for synthetic control
-
-Map dump → recovery signatures
-
+- automated tap detection  
+- tap‑depth scoring  
+- actor‑reaction indexing  
+- tap‑to‑spike correlation  

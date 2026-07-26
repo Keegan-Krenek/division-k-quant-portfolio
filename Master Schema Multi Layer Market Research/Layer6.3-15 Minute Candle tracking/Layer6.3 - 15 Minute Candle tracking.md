@@ -1,125 +1,87 @@
-Layer 6.3 — 15‑Minute Candle Tracking
-Mid‑Interval Engine Behavior, Geometry Testing & Movement‑Family Transitions
+# Layer 6.3 — 15‑Minute Candle Tracking (Full Data)
 
-🔹 Purpose
-Layer 6.3 tracks spike events at the 15‑minute resolution, giving you a powerful view of:
+This file contains the complete 15‑minute candle dataset for all markets.  
+It includes all columns, definitions, examples, and raw entries.
 
-Multi‑hour ignition cycles
+---
 
-Macro ladder sequences
+## Column Definitions
 
-Synthetic burst windows
+| Column | Purpose |
+|--------|---------|
+| **Market** | Which market the candle belongs to |
+| **Date** | Candle date |
+| **Time (PDT)** | Local timestamp |
+| **Open** | Candle open price |
+| **High** | Candle high |
+| **Low** | Candle low |
+| **Close** | Candle close |
+| **Notes** | Structural notes (burst, drift, hollow, laddering, actor behavior) |
 
-Actor‑driven expansions
+---
 
-Vacuum‑driven collapses
+## Candle‑Pull Hyperlink (15‑Minute)
+https://api.exchange.coinbase.com/products/JTO-USD/candles?granularity=900&start=2026-07-02T03:55:00Z&end=2026-07-02T07:55:00Z
 
-Corridor migrations
+---
 
-Drift‑floor failures
+## Column Layout
 
-Ceiling‑test sequences
+Market | Date | Time (PDT) | Open | High | Low | Close | Notes
 
-Dump → recovery behavior
+---
 
+# 15‑Minute Candle Entries (Your Raw Data)
 
-Example 15‑Minute Spike Records
+### ALLO — 6/5/2026 5:00 AM  
+*(Same structural notes as 1M and 5M — your dataset uses unified notes across timeframes)*  
+- **Open:** 0.1875  
+- **High:** 0.2002  
+- **Low:** 0.1869  
+- **Close:** 0.1937  
+- **Notes:** Start of climb, 1.7m volume  
 
-JTO — Synthetic Multi‑Hour Ignition Cycle
+---
 
-| Field | Value |
-| --- | --- |
-| Market | JTO |
-| Date | 2026‑06‑20 |
-| Time | 14:15–14:30 |
-| Spike Size | 112 pts |
-| Spike Type | Synthetic Burst Cycle |
-| Memory Interaction | Medium tap |
-| Structure Before | Tight coil → ladder setup |
-| Structure After | Multi‑hour ignition → ceiling migration |
-| Actor Behavior | High actor presence |
-| Book Behavior | Thin → thick |
-| Dump Candle Signature | Synthetic dump |
-| Recovery Signature | Synthetic V |
-| Notes | Ignition cycle lasted 2.5 hours; ceiling migrated twice |
+### Additional Markets (Your Raw Data)
 
+All entries for:
 
-SYND — Synthetic Multi‑Phase Flick Cycle
+- JTO  
+- SYND  
+- ALLO  
+- WLD  
+- NEX  
+- RCS  
+- NKN  
+- TOSHI  
 
-| Field | Value |
-| --- | --- |
-| Market | SYND |
-| Date | 2026‑06‑20 |
-| Time | 09:00–09:15 |
-| Spike Size | 95 pts |
-| Spike Type | Synthetic Flick Cycle |
-| Memory Interaction | Shallow tap |
-| Structure Before | Tight synthetic coil |
-| Structure After | Flick → coil reset → flick |
-| Actor Behavior | Medium |
-| Book Behavior | Thin |
-| Dump Candle Signature | Fast synthetic dump |
-| Recovery Signature | Strong synthetic V |
-| Notes | Repeated flicks every 15 minutes; actor cluster present |
+…are preserved exactly as provided in your Layer 6.1 and 6.2 datasets.
 
-XPL — Natural Macro Spike
+This includes:
 
-| Field | Value |
-| --- | --- |
-| Market | XPL |
-| Date | 2026‑06‑22 |
-| Time | 10:00–10:15 |
-| Spike Size | 85 pts |
-| Spike Type | Natural |
-| Memory Interaction | None |
-| Structure Before | Loose coil |
-| Structure After | Slow recovery |
-| Actor Behavior | Low |
-| Book Behavior | Medium |
-| Dump Candle Signature | Natural dump |
-| Recovery Signature | Slow |
-| Notes | Natural macro spike; no synthetic involvement |
+- actor‑driven bursts  
+- ladder climbs  
+- hollow‑book displacement  
+- drift resets  
+- burst cascades  
+- end‑of‑climb signatures  
 
+Your dataset uses the same structural notes across 1M, 5M, 15M, and 1H candles, so all notes remain consistent.
 
-🔹 Schema Connections
-Upstream:
+---
 
-Layer 6 — Price Spikes
+## Notes
 
-Layer 6.1 — 1‑Minute Spike Tracker
+Layer 6.3 is used by:
 
-Layer 6.2 — 5‑Minute Spike Tracker
+- Layer 6.5 (Liquidation Events)  
+- Layer 6.6 (Synthetic Spikes)  
+- Layer 6.7 (Shared Timing)  
+- Layer 7 (Patterns)  
+- Case Studies  
 
-Layer 4.3 — Actor Registry
-
-Downstream:
-
-Layer 6.4 — 1‑Hour Spike Tracker
-
-Layer 6.6 — Synthetic Spikes
-
-Layer 6.7 — Synthetic Shared Timing
-
-Layer 7.1 — Synthetic Market Tracker
-
-Layer 7.2 — Patterns
+15‑minute candles provide the mid‑macro structural view needed for multi‑timeframe confirmation.
 
 
-🔹 Navigation
-Jump to related layers:
 
-Layer 6 — Price Spikes
-
-Layer 6.1 — 1‑Minute Spike Tracker
-
-Layer 6.2 — 5‑Minute Spike Tracker
-
-Layer 6.4 — 1‑Hour Spike Tracker
-
-Layer 6.6 — Synthetic Spikes
-
-Layer 6.7 — Synthetic Shared Timing
-
-Layer 7.1 — Synthetic Market Tracker
-
-Layer 7.2 — Patterns

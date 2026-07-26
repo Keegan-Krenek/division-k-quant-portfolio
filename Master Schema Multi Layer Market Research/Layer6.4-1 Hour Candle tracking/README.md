@@ -1,43 +1,76 @@
-Layer 6.4 — 1‑Hour Candle Tracking
-Macro Spike Structure, Engine Rhythm, Memory Interaction & Long‑Cycle Behavior
+# Layer 6.4 — 1‑Hour Candle Tracking
 
+Layer 6.4 records 1‑hour candle behavior for each market.  
+This timeframe provides the macro‑structural view of engine behavior, revealing drift‑floors, ceiling‑tests, burst‑corridor formation, synthetic resets, and long‑cycle actor pressure.
 
+1‑hour candles are ideal for identifying large‑scale structural transitions that define the engine’s daily and multi‑day movement.
 
-| **Column** | **Purpose** |
-| --- | --- |
-| **Market** | Which market the spike occurred in |
-| **Date** | When the spike happened |
-| **Time (PDT)** | Exact timestamp |
-| **Spike Size** | Magnitude of the spike |
-| **Spike Type** | Natural / Synthetic / Actor‑Forced / Vacuum |
-| **Memory Interaction** | Whether the spike interacted with a memory band |
-| **Structure Before** | Engine state before the spike |
-| **Structure After** | Engine state after the spike |
-| **Actor Behavior** | Actor involvement |
-| **Book Behavior** | Thick / thin / hollow |
-| **Dump Candle Signature** | Shape & speed of dumps |
-| **Recovery Signature** | V‑shape / slow / synthetic |
-| **Notes** | Freeform structural notes |
+---
 
+## Purpose of This Layer
 
-
-Usage
 Use Layer 6.4 to:
 
-Identify multi‑hour → multi‑day synthetic ignition cycles
+- track macro‑scale structural behavior  
+- identify drift‑floor formation and failure  
+- detect ceiling‑test sequences  
+- observe long‑cycle synthetic resets  
+- support spike, liquidation, and shared‑timing analysis  
+- validate mid‑macro reads from Layer 6.3  
 
-Track macro ladder sequences
+This layer provides the “macro structural view” of engine behavior.
 
-Detect vacuum collapses
+---
 
-Map macro burst sequences
+## What This Layer Contains
 
-Understand dump → recovery behavior
+- timestamped 1‑hour candles  
+- open / high / low / close values  
+- structural notes (burst, drift, hollow, laddering, actor behavior)  
+- synthetic reset patterns  
+- macro‑cycle transitions  
 
-Build multi‑day case studies
+Each candle entry represents one hour of structural engine behavior.
 
-Feed macro spike layers (6.6–6.8)
+---
 
-Identify ceiling migrations
+## Connections to Other Layers
 
-Diagnose drift‑floor failures
+### Master Schema  
+Layer 6.4 corresponds to **Candle Trackers (1H)** in the 20‑Layer Master Schema.
+
+### Proto‑Database  
+Maps to the SQL table:  
+- `candle_trackers_1h`
+
+### Image Library  
+References visuals from:  
+- Candle‑Sequences  
+- Spike‑Patterns  
+- Synthetic‑Spikes  
+- Shared‑Market‑Timing  
+
+---
+
+## Why Layer 6.4 Matters
+
+1‑hour candles enable:
+
+- macro‑cycle detection  
+- actor‑pressure wave identification  
+- synthetic‑reset recognition  
+- drift‑floor formation analysis  
+- multi‑timeframe confirmation  
+
+This layer is essential for understanding the engine’s large‑scale structural behavior.
+
+---
+
+## Future Expansion
+
+Planned improvements include:
+
+- automated 1H candle ingestion  
+- macro‑cycle classification  
+- actor‑pressure scoring  
+- synthetic‑reset detection  

@@ -1,46 +1,88 @@
-Layer 6.5 — Liquidation Events
-Forced Exits, Cascade Behavior, Synthetic Liquidation Triggers & Structural Impact.
+# Layer 6.5 — Liquidation Events
 
-🔹 Usage
+Layer 6.5 tracks liquidation‑driven structural events across all markets.  
+Liquidations are high‑impact engine events that reveal actor pressure, book stability, cascade depth, and synthetic interaction.  
+This layer captures both micro‑liquidations and macro‑cycle liquidation chains.
+
+Liquidation events often define the start, midpoint, or failure of major structural cycles.
+
+---
+
+## Purpose of This Layer
+
 Use Layer 6.5 to:
 
-Identify forced‑move cycles
+- identify liquidation clusters and cascade depth  
+- classify liquidation type (U‑shape, V‑shape, Staircase, Pinnacle Chain)  
+- measure actor pressure during forced liquidations  
+- evaluate book behavior (thin, hollow, absorption, vacuum)  
+- detect synthetic interaction during liquidation cycles  
+- track engine reaction (stall, accelerate, reverse, ignore)  
+- analyze pre‑event and post‑event structure  
 
-Track liquidation cluster density
+Liquidations reveal **engine stress**, **actor dominance**, and **cycle transitions**.
 
-Measure cascade depth
+---
 
-Understand actor involvement
+## What This Layer Contains
 
-Diagnose book hollowness
+- liquidation timestamps  
+- long/short side liquidated  
+- liquidation size  
+- cluster density  
+- liquidation type  
+- cascade depth  
+- engine reaction  
+- actor reaction  
+- book reaction  
+- spike interaction  
+- synthetic interaction  
+- recovery time  
+- follow‑through strength  
+- pre‑event and post‑event structure  
+- freeform notes  
 
-Map dump → recovery behavior
+Each entry represents a complete liquidation event.
 
-Build macro‑cycle case studies
+---
 
-Detect synthetic timing clusters
+## Connections to Other Layers
 
-Predict follow‑through strength
+### Master Schema  
+Layer 6.5 corresponds to **Liquidation Events** in the 20‑Layer Master Schema.
 
+### Proto‑Database  
+Maps to the SQL table:  
+- `liquidation_events`
 
+### Image Library  
+References visuals from:  
+- Liquidation‑Chains  
+- Spike‑Patterns  
+- Synthetic‑Spikes  
+- Candle‑Sequences  
 
-| **Column** | **Purpose** |
-| --- | --- |
-| **Market** | Which engine the liquidation occurred in |
-| **Long/Short Liquidation** | Bias of the forced move |
-| **Liquidation Size** | Notional size of the liquidation |
-| **Cluster Density** | How tightly liquidation events are grouped |
-| **Event Count** | Number of liquidation events in the cycle |
-| **Cascade Depth** | How deep the forced move runs |
-| **Engine Reaction** | How the engine responds |
-| **Actor Reaction** | Actor involvement |
-| **Book Reaction** | Thick / thin / hollow |
-| **Spike Interaction** | Synthetic or natural spike involvement |
-| **Recovery Time** | Time required for engine to stabilize |
-| **Follow‑Through Strength** | Weak / medium / strong |
-| **Notes** | Freeform structural notes |
+---
 
+## Why Layer 6.5 Matters
 
+Liquidation events enable:
 
+- cascade‑depth modeling  
+- actor‑pressure interpretation  
+- synthetic‑engine detection  
+- macro‑cycle forecasting  
+- structural reset identification  
 
+This layer is essential for understanding how engines behave under extreme pressure.
 
+---
+
+## Future Expansion
+
+Planned improvements include:
+
+- automated liquidation detection  
+- cascade‑depth scoring  
+- synthetic‑interaction indexing  
+- liquidation‑cycle forecasting  
