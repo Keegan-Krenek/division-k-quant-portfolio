@@ -1,4 +1,4 @@
-## QI‑USD Synthetic Engine Case Study — Oct 2025 → Mar 2026
+# QI‑USD Synthetic Engine Case Study — Oct 2025 → Mar 2026
 
 ## Event Summary
 From October 2025 through March 2026, QI‑USD exhibited a flat‑spike synthetic‑engine cycle defined by a memory‑band snap, sharp synthetic movement, and a drift‑floor rebuild phase. The engine showed consistent pre‑ignite spike behavior, ladder‑based ignition preparation, and seasonal synthetic timing patterns.
