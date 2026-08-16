@@ -89,6 +89,10 @@ SQL: synthetic_shared_timing
 Markets with flat‑spike structural behavior.  
 SQL: flat_spike_markets
 
+- **Layer 6.9 - Cost Ratio & Spike-Class Mapping**
+Tracks spike geometry, cost tiers, sector repricing, and memory‑tap behavior.
+SQL: cost_ratio_mapping
+
 - **Layer 7 — Synthetic Market Tracker**  
 Tracks synthetic engine evolution across markets.  
 SQL: synthetic_spikes + shared_timing
