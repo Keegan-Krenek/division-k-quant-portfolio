@@ -101,7 +101,9 @@ Examples:
 - `price_spikes` → Layer 6  
 - `candle_*` → Layer 6.x  
 - `liquidation_events` → Layer 6.5  
-- `synthetic_shared_timing` → Layer 6.7  
+- `synthetic_shared_timing` → Layer 6.7
+- `flat_spike_markets` → Layer 6.8  
+- `cost_ratio_mapping` → Layer 6.9 
 - `patterns` → Layer 7  
 
 This creates a direct bridge between:

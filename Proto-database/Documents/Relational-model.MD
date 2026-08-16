@@ -67,7 +67,10 @@ synthetic_spikes.synthetic_id → synthetic_shared_timing.synthetic_id
 ### 12. Markets → Flat Spike Markets (1‑to‑Many)
 markets.market_id → flat_spike_markets.market_id
 
-### 13. Patterns → All Major Tables (Many‑to‑Many)
+### 13. Markets → Cost Ratio Mapping (1‑to‑Many)
+markets.market_id → cost_ratio_mapping.market_id
+
+### 14. Patterns → All Major Tables (Many‑to‑Many)
 Patterns may reference spikes, actors, trades, candle sequences, liquidation events, timing sync, and movement families.
 
 ---
@@ -82,6 +85,7 @@ Patterns may reference spikes, actors, trades, candle sequences, liquidation eve
 | price_spikes       | actors                                           | many‑to‑one       | Actor fingerprint linkage         |
 | engine_map         | movement_family, memory_taps                     | 1‑to‑many         | Engine mechanics                  |
 | synthetic_spikes   | synthetic_shared_timing                          | 1‑to‑many         | Synthetic timing sync             |
+| cost_ratio_mapping | markets | 1‑to‑many | Spike cost tiers + sector repricing + memory‑tap behavior |
 | patterns           | all major tables                                 | many‑to‑many      | Structural ontology               |
 
 ---
@@ -105,6 +109,11 @@ SELECT st.*, ss.*, m.*
 FROM synthetic_shared_timing st
 JOIN synthetic_spikes ss ON st.synthetic_id = ss.synthetic_id
 JOIN markets m ON ss.market_id = m.market_id;
+
+# Cost Ratio Mapping with Market Info
+SELECT c.*, m.*
+FROM cost_ratio_mapping c
+JOIN markets m ON c.market_id = m.market_id;
 
 # Schema Integration Notes
 The relational model is designed to:
